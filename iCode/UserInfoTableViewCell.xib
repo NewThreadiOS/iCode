@@ -17,11 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hgG-f2-gXc">
-                        <rect key="frame" x="20" y="0.0" width="69" height="69"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xjp" translatesAutoresizingMaskIntoConstraints="NO" id="hgG-f2-gXc">
+                        <rect key="frame" x="20" y="0.0" width="68" height="68"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="hgG-f2-gXc" secondAttribute="height" multiplier="1:1" id="pol-Em-Fho"/>
                         </constraints>
@@ -59,4 +59,7 @@
             <point key="canvasLocation" x="25" y="64.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="xjp" width="320" height="246"/>
+    </resources>
 </document>

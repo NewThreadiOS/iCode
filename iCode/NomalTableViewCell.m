@@ -31,16 +31,7 @@
 }
 
 +(NomalTableViewCell *)nomalTableViewCellWithTableView:(UITableView *)tableView{
-    NSString *reuseID = @"reuseID";
-    NomalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"NomalTableViewCell" owner:nil options:nil]lastObject];
-    }
-    return cell;
-}
-
--(NomalTableViewCell *)nomalTableViewCellWithTableView:(UITableView *)tableView{
-    NSString *reuseID = @"reuseID";
+    static NSString *reuseID = @"reuseID";
     NomalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
     if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"NomalTableViewCell" owner:nil options:nil]lastObject];
