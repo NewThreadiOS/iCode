@@ -36,7 +36,17 @@
 }
 
 +(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView{
-    static NSString *reuseID = @"reuseID";
+    NSString *reuseID = @"reuseID";
+    UserInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]lastObject];
+        
+    }
+    return cell;
+}
+
+-(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView{
+    NSString *reuseID = @"reuseID";
     UserInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]lastObject];

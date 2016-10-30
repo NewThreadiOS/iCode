@@ -1,12 +1,2 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import"ProgressHUD.h"
-
-/**
- *  头像cell高度
- */
-#define iconRowHeight 74
-
-/**
- *  普通cell高度
- */
-#define nomalRowHeight 44

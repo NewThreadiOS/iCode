@@ -11,5 +11,6 @@
 @interface UserInfoTableViewCell : UITableViewCell
 
 +(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView;
+-(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView;
 
 @end

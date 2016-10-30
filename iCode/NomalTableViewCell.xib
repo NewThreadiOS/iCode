@@ -16,17 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-3O-Pz2">
-                        <rect key="frame" x="15" y="0.0" width="64" height="64"/>
+                        <rect key="frame" x="20" y="0.0" width="63.5" height="63.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="iW5-3O-Pz2" secondAttribute="height" multiplier="1:1" id="WkJ-GS-S9a"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-oT-t1m">
-                        <rect key="frame" x="89" y="21" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIM-oT-t1m">
+                        <rect key="frame" x="98" y="21" width="111" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <constraint firstItem="wIM-oT-t1m" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NAE-QZ-1h8"/>
                     <constraint firstItem="iW5-3O-Pz2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="V7m-NG-3f1"/>
                     <constraint firstItem="wIM-oT-t1m" firstAttribute="leading" secondItem="iW5-3O-Pz2" secondAttribute="trailing" constant="10" id="fpx-Qq-0De"/>
-                    <constraint firstItem="iW5-3O-Pz2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hbC-BD-B16"/>
+                    <constraint firstItem="iW5-3O-Pz2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hbC-BD-B16"/>
                     <constraint firstAttribute="bottom" secondItem="iW5-3O-Pz2" secondAttribute="bottom" id="hvj-jW-wCX"/>
                 </constraints>
             </tableViewCellContentView>

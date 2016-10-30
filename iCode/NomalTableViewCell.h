@@ -14,5 +14,6 @@
 @property (nonatomic,strong)MeMenu *meMenu;
 
 +(NomalTableViewCell *)nomalTableViewCellWithTableView:(UITableView *)tableView;
+-(NomalTableViewCell *)nomalTableViewCellWithTableView:(UITableView *)tableView;
 
 @end

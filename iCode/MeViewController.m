@@ -10,7 +10,6 @@
 #import "UserInfoTableViewCell.h"
 #import "NomalTableViewCell.h"
 #import "MeMenu.h"
-#import "UserInfoViewController.h"
 
 @interface MeViewController () <UITableViewDataSource,UITableViewDelegate>
 
@@ -93,9 +92,9 @@
 //row的高度
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
-        return iconRowHeight;
+        return 70;
     }else{
-        return nomalRowHeight;
+        return 44;
     }
 }
 
@@ -110,10 +109,7 @@
 //}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section ==0 && indexPath.row == 0) {
-        UserInfoViewController *userInfoVc = [[UserInfoViewController alloc]init];
-        [self.navigationController pushViewController:userInfoVc animated:YES];
-    }
+    
 }
 
 @end
