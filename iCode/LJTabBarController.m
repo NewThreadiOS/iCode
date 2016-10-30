@@ -78,11 +78,6 @@
     MeViewController*profile = [[MeViewController alloc]init];
     [self setUPOneChildViewController:profile image:[UIImage imageNamed:@"tabbar_profile"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_profile_selected"] title:@"我"];
     
-    
-    
-    
-    
-    
 }
 -(void)setUPOneChildViewController:(UIViewController*)vc image:(UIImage*)image selectedImage :(UIImage*)selectedImage title:(NSString*)title
 {
@@ -95,7 +90,7 @@
     //
     //    [vc.tabBarItem setTitleTextAttributes:att forState:UIControlStateSelected];
 //    vc.tabBarItem.badgeValue=@"1";
-    UIImage*setImage=selectedImage;
+    UIImage *setImage = selectedImage;
     vc.tabBarItem.selectedImage = setImage;
     [self addChildViewController:vc];
 }
