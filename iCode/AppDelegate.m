@@ -17,6 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [AVOSCloud setApplicationId:@"RaXqoe6b1NmUv5XuJFA01TWv-gzGzoHsz" clientKey:@"7RoSakElKCXLUH3oGjVSge0K"];
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     LJTabBarController *tableBarController = [[LJTabBarController alloc]init];
