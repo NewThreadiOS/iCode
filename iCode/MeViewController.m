@@ -2,17 +2,19 @@
 //  MeViewController.m
 //  iCode
 //
-//  Created by Mr.Nut on 16/10/29.
-//  Copyright © 2016年 Mr.Nut. All rights reserved.
+//  Created by SoolyChristina on 16/10/29.
+//  Copyright © 2016年 SoolyChristina. All rights reserved.
 //
 
 #import "MeViewController.h"
 #import "UserInfoTableViewCell.h"
 #import "NomalTableViewCell.h"
+#import "MeMenu.h"
 
 @interface MeViewController () <UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *dataArrs; //数据
 
 @end
 
@@ -21,14 +23,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
+    [self initData];
 }
 
 -(void)initUI{
+    self.navigationController.title = @"我的";
     [self.view addSubview:self.tableView];
 }
 
 -(void)initData{
     
+}
+
+-(NSMutableArray *)dataArrs{
+    if (_dataArrs == nil) {
+        _dataArrs = [NSMutableArray array];
+        self.dataArrs = [MeMenu menuArrs];
+    }
+    return _dataArrs;
 }
 
 -(UITableView *)tableView{
@@ -48,21 +60,32 @@
 #pragma mark - tableView方法
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 2;
+    return 3;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    if (section == 0) {
+        return 1;
+    }else if (section == 1){
+        return 2;
+    }else{
+        return 1;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section == 0) {
         //创建用户信息cell
-        NSLog(@"0");
         return [UserInfoTableViewCell userInfoTableViewCellWithTableView:tableView];
     }else{
-        NSLog(@"1");
-        return [NomalTableViewCell nomalTableViewCellWithTableView:tableView];
+        NomalTableViewCell *cell = [NomalTableViewCell nomalTableViewCellWithTableView:tableView];
+        //获取数据
+        if (indexPath.section == 1) {
+            cell.meMenu = [self.dataArrs objectAtIndex:indexPath.row];
+        }else if (indexPath.section == 2){
+            cell.meMenu = [self.dataArrs objectAtIndex:indexPath.row + 2];
+        }
+        return cell;
     }
 }
 
@@ -84,5 +107,9 @@
 //-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
 //    return 25;
 //}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
 
 @end

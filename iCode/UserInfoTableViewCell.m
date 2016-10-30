@@ -3,7 +3,7 @@
 //  iCode
 //
 //  Created by SoolyChristina on 2016/10/29.
-//  Copyright © 2016年 Mr.Nut. All rights reserved.
+//  Copyright © 2016年 SoolyChristina. All rights reserved.
 //
 
 #import "UserInfoTableViewCell.h"
@@ -32,7 +32,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
 }
 
 +(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView{
@@ -40,7 +40,16 @@
     UserInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
     if (!cell) {
         cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]lastObject];
-        cell.iconView.image = [UIImage imageNamed:@"tabbar_home"];
+        
+    }
+    return cell;
+}
+
+-(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView{
+    NSString *reuseID = @"reuseID";
+    UserInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]lastObject];
         
     }
     return cell;

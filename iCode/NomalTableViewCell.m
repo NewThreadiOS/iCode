@@ -35,9 +35,23 @@
     NomalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
     if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"NomalTableViewCell" owner:nil options:nil]lastObject];
-        cell.iconView.image = [UIImage imageNamed:@"tabbar_home"];
     }
     return cell;
+}
+
+-(NomalTableViewCell *)nomalTableViewCellWithTableView:(UITableView *)tableView{
+    NSString *reuseID = @"reuseID";
+    NomalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"NomalTableViewCell" owner:nil options:nil]lastObject];
+    }
+    return cell;
+}
+
+-(void)setMeMenu:(MeMenu *)meMenu{
+    _meMenu = meMenu;
+    self.nameLabel.text = meMenu.name;
+    self.iconView.image = [UIImage imageNamed:meMenu.iconName];
 }
 
 @end
