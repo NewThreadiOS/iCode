@@ -53,6 +53,8 @@
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         //禁止滑动
         _tableView.scrollEnabled = NO;
+        //背景颜色
+        _tableView.backgroundColor = [UIColor colorWithHexString:@"#EBEBEB"];
 
     }
     return _tableView;

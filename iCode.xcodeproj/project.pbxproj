@@ -13,6 +13,14 @@
 		705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */; };
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
 		705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11191DC4C018007A6795 /* NomalTableViewCell.xib */; };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060B9821DC7309D0032CE2A /* SLTableViewCell.m */; };
+		70A6D55B1DC49BB800D8BC1D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A6D55A1DC49BB800D8BC1D /* LoginViewController.m */; };
+=======
+>>>>>>> master
+>>>>>>> Sooly
 		B3019F581DC48C390062CF35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F571DC48C390062CF35 /* main.m */; };
 		B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F5A1DC48C390062CF35 /* AppDelegate.m */; };
 		B3019F611DC48C390062CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3019F5F1DC48C390062CF35 /* Main.storyboard */; };
@@ -50,6 +58,16 @@
 		705E11171DC4C018007A6795 /* NomalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NomalTableViewCell.h; sourceTree = "<group>"; };
 		705E11181DC4C018007A6795 /* NomalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NomalTableViewCell.m; sourceTree = "<group>"; };
 		705E11191DC4C018007A6795 /* NomalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomalTableViewCell.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		7060B9811DC7309D0032CE2A /* SLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableViewCell.h; sourceTree = "<group>"; };
+		7060B9821DC7309D0032CE2A /* SLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCell.m; sourceTree = "<group>"; };
+		70A6D5591DC49BB800D8BC1D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		70A6D55A1DC49BB800D8BC1D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+=======
+>>>>>>> master
+>>>>>>> Sooly
 		A4615F70D2BBE6A2ADFD15FB /* Pods-iCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCode/Pods-iCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B3019F531DC48C390062CF35 /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3019F571DC48C390062CF35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -280,6 +298,8 @@
 				EFBCB0B41DC602350029648E /* IconTableViewCell.h */,
 				EFBCB0B51DC602350029648E /* IconTableViewCell.m */,
 				EFBCB0B61DC602350029648E /* IconTableViewCell.xib */,
+				7060B9811DC7309D0032CE2A /* SLTableViewCell.h */,
+				7060B9821DC7309D0032CE2A /* SLTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -531,6 +551,7 @@
 				EFBCB0B31DC6015C0029648E /* UserInfoViewController.m in Sources */,
 				EFD7DF631DC4FADA004022D8 /* MeMenu.m in Sources */,
 				B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */,
+				7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */,
 				B3019F831DC48FEF0062CF35 /* LiveViewController.m in Sources */,
 				B3019F581DC48C390062CF35 /* main.m in Sources */,
 				B304C0CA1DC74801008CF977 /* LogViewController.m in Sources */,

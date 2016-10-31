@@ -8,6 +8,7 @@
 
 #import "UserInfoViewController.h"
 #import "IconTableViewCell.h"
+#import "SLTableViewCell.h"
 
 @interface UserInfoViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -39,6 +40,11 @@
         _tableView.dataSource = self;
         //禁止滑动
         _tableView.scrollEnabled = NO;
+        //背景颜色
+        _tableView.backgroundColor = [UIColor colorWithHexString:@"#EBEBEB"];
+        
+        UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
+        [_tableView setTableFooterView:v];
     }
     return _tableView;
 }
@@ -62,14 +68,7 @@
         IconTableViewCell *cell = [IconTableViewCell iconTableViewCellWithTableView:tableView];
         return cell;
     }else{
-        static NSString *reuseID = @"reuseID2";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-        if (!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseID];
-            cell.detailTextLabel.font = [UIFont systemFontOfSize:16];
-        }
-        cell.textLabel.text = @"测试";
-        cell.detailTextLabel.text = @"这是详细描述";
+        SLTableViewCell *cell = [SLTableViewCell tableViewCellWithTableView:tableView andIndexPath:indexPath];
         return cell;
     }
 }
