@@ -26,12 +26,7 @@
     //设置tabBar不透明
     tableBarController.tabBar.translucent = NO;
     
-    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:tableBarController];
-    
-    //设置navigationBar不透明
-    navigationController.navigationBar.translucent = NO;
-    
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = tableBarController;
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -14,6 +14,7 @@
 #import "CodeViewController.h"
 #import "LiveViewController.h"
 #import "IMViewController.h"
+#import "SLViewController.h"
 
 
 
@@ -62,21 +63,21 @@
 #pragma mark-添加子控制器
 -(void)setUpAllChildViewController{
      //Live
-    LiveViewController*home = [[LiveViewController alloc]init];
-    [self setUPOneChildViewController:home image:[UIImage imageNamed:@"tabbar_home"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_home_selected"] title:@"首页"];
+    SLViewController *live = [[SLViewController alloc]initWithRootViewController:[[LiveViewController alloc]init]];
+    [self setUPOneChildViewController:live image:[UIImage imageNamed:@"tabbar_home"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_home_selected"] title:@"直播"];
     
     
    //IM
-    IMViewController*message = [[IMViewController alloc]init];
-    [self setUPOneChildViewController:message image:[UIImage imageNamed:@"tabbar_message_center"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_message_center_selected"] title:@"消息"];
+    SLViewController *im = [[SLViewController alloc]initWithRootViewController:[[IMViewController alloc]init]];
+    [self setUPOneChildViewController:im image:[UIImage imageNamed:@"tabbar_message_center"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_message_center_selected"] title:@"消息"];
     //Code
-    CodeViewController*discover = [[CodeViewController alloc]init];
-    [self setUPOneChildViewController:discover image:[UIImage imageNamed:@"tabbar_discover"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_discover_selected"] title:@"发现"];
+    SLViewController *code = [[SLViewController alloc]initWithRootViewController:[[CodeViewController alloc]init]];
+    [self setUPOneChildViewController:code image:[UIImage imageNamed:@"tabbar_discover"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_discover_selected"] title:@"Code圈"];
     
     
     //Me
-    MeViewController*profile = [[MeViewController alloc]init];
-    [self setUPOneChildViewController:profile image:[UIImage imageNamed:@"tabbar_profile"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_profile_selected"] title:@"我"];
+    SLViewController *me = [[SLViewController alloc]initWithRootViewController:[[MeViewController alloc]init]];
+    [self setUPOneChildViewController:me image:[UIImage imageNamed:@"tabbar_profile"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_profile_selected"] title:@"我"];
     
 }
 -(void)setUPOneChildViewController:(UIViewController*)vc image:(UIImage*)image selectedImage :(UIImage*)selectedImage title:(NSString*)title

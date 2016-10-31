@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70163A271DC720290025DAD7 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70163A261DC720290025DAD7 /* SLViewController.m */; };
+		70163A2A1DC723230025DAD7 /* UIColor+iCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 70163A291DC723230025DAD7 /* UIColor+iCode.m */; };
 		705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */; };
 		705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */; };
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
@@ -36,6 +38,10 @@
 
 /* Begin PBXFileReference section */
 		398143BAC19E9D699849AE46 /* Pods-iCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCode/Pods-iCode.release.xcconfig"; sourceTree = "<group>"; };
+		70163A251DC720290025DAD7 /* SLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		70163A261DC720290025DAD7 /* SLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
+		70163A281DC723230025DAD7 /* UIColor+iCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iCode.h"; sourceTree = "<group>"; };
+		70163A291DC723230025DAD7 /* UIColor+iCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iCode.m"; sourceTree = "<group>"; };
 		705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
 		705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
 		705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -102,6 +108,186 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70163A0C1DC71CC70025DAD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				70163A171DC71DB10025DAD7 /* Other */,
+				70163A111DC71D660025DAD7 /* Live */,
+				70163A0F1DC71D580025DAD7 /* IM */,
+				70163A0E1DC71CDE0025DAD7 /* Code圈 */,
+				70163A0D1DC71CDA0025DAD7 /* 我 */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		70163A0D1DC71CDA0025DAD7 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				70163A211DC71E0B0025DAD7 /* Model */,
+				70163A231DC71E740025DAD7 /* View */,
+				70163A201DC71E080025DAD7 /* Controller */,
+			);
+			name = "我";
+			sourceTree = "<group>";
+		};
+		70163A0E1DC71CDE0025DAD7 /* Code圈 */ = {
+			isa = PBXGroup;
+			children = (
+				70163A1E1DC71DF90025DAD7 /* Model */,
+				70163A1D1DC71DF70025DAD7 /* View */,
+				70163A1C1DC71DF20025DAD7 /* Controller */,
+			);
+			name = "Code圈";
+			sourceTree = "<group>";
+		};
+		70163A0F1DC71D580025DAD7 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				70163A1B1DC71DE50025DAD7 /* Model */,
+				70163A1A1DC71DD20025DAD7 /* View */,
+				70163A181DC71DCA0025DAD7 /* Controller */,
+			);
+			name = IM;
+			sourceTree = "<group>";
+		};
+		70163A111DC71D660025DAD7 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				70163A161DC71D960025DAD7 /* Model */,
+				70163A151DC71D910025DAD7 /* View */,
+				70163A141DC71D8D0025DAD7 /* Controller */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		70163A141DC71D8D0025DAD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3019F811DC48FEF0062CF35 /* LiveViewController.h */,
+				B3019F821DC48FEF0062CF35 /* LiveViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70163A151DC71D910025DAD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70163A161DC71D960025DAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70163A171DC71DB10025DAD7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B3019F591DC48C390062CF35 /* AppDelegate.h */,
+				B3019F5A1DC48C390062CF35 /* AppDelegate.m */,
+				70163A241DC71FFD0025DAD7 /* SLNavigationController */,
+				B33909AF1DC5E52D00E6E3F5 /* 第三方 */,
+				EFD7DF601DC4F9E8004022D8 /* Category(类别) */,
+				B3019F6D1DC48C540062CF35 /* TabBar */,
+				70A6D5581DC49BA100D8BC1D /* 登录 */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		70163A181DC71DCA0025DAD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3019F841DC4900A0062CF35 /* IMViewController.h */,
+				B3019F851DC4900A0062CF35 /* IMViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70163A1A1DC71DD20025DAD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70163A1B1DC71DE50025DAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70163A1C1DC71DF20025DAD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3019F7E1DC48FE40062CF35 /* CodeViewController.h */,
+				B3019F7F1DC48FE40062CF35 /* CodeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70163A1D1DC71DF70025DAD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70163A1E1DC71DF90025DAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70163A201DC71E080025DAD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3019F7B1DC48F730062CF35 /* MeViewController.h */,
+				B3019F7C1DC48F730062CF35 /* MeViewController.m */,
+				EFBCB0B11DC6015C0029648E /* UserInfoViewController.h */,
+				EFBCB0B21DC6015C0029648E /* UserInfoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		70163A211DC71E0B0025DAD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7DF611DC4FADA004022D8 /* MeMenu.h */,
+				EFD7DF621DC4FADA004022D8 /* MeMenu.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		70163A231DC71E740025DAD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */,
+				705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */,
+				705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */,
+				705E11171DC4C018007A6795 /* NomalTableViewCell.h */,
+				705E11181DC4C018007A6795 /* NomalTableViewCell.m */,
+				705E11191DC4C018007A6795 /* NomalTableViewCell.xib */,
+				EFBCB0B41DC602350029648E /* IconTableViewCell.h */,
+				EFBCB0B51DC602350029648E /* IconTableViewCell.m */,
+				EFBCB0B61DC602350029648E /* IconTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		70163A241DC71FFD0025DAD7 /* SLNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				70163A251DC720290025DAD7 /* SLViewController.h */,
+				70163A261DC720290025DAD7 /* SLViewController.m */,
+			);
+			name = SLNavigationController;
+			sourceTree = "<group>";
+		};
 		70A6D5581DC49BA100D8BC1D /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,12 +318,7 @@
 		B3019F551DC48C390062CF35 /* iCode */ = {
 			isa = PBXGroup;
 			children = (
-				EFD7DF531DC4F78A004022D8 /* Model */,
-				EFD7DF541DC4F791004022D8 /* View */,
-				EFD7DF551DC4F79A004022D8 /* Controller */,
-				B33909AF1DC5E52D00E6E3F5 /* Third-party library(手动第三方库) */,
-				EFD7DF601DC4F9E8004022D8 /* Category(类别) */,
-				EFD7DF581DC4F873004022D8 /* Other */,
+				70163A0C1DC71CC70025DAD7 /* Classes */,
 				B3019F561DC48C390062CF35 /* Supporting Files */,
 			);
 			path = iCode;
@@ -146,6 +327,8 @@
 		B3019F561DC48C390062CF35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B3019F641DC48C390062CF35 /* LaunchScreen.storyboard */,
+				B3019F5F1DC48C390062CF35 /* Main.storyboard */,
 				B3019F671DC48C390062CF35 /* Info.plist */,
 				B3019F621DC48C390062CF35 /* Assets.xcassets */,
 				B3019F571DC48C390062CF35 /* main.m */,
@@ -158,58 +341,20 @@
 		B3019F6D1DC48C540062CF35 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B3019F6E1DC48C8C0062CF35 /* UIImage+image.h */,
-				B3019F6F1DC48C8C0062CF35 /* UIImage+image.m */,
+				B3019F741DC48D190062CF35 /* LJTabBarController.h */,
+				B3019F751DC48D190062CF35 /* LJTabBarController.m */,
 				B3019F711DC48CD50062CF35 /* LJTaBar.h */,
 				B3019F721DC48CD50062CF35 /* LJTaBar.m */,
 			);
 			name = TabBar;
 			sourceTree = "<group>";
 		};
-		B3019F771DC48EFE0062CF35 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F811DC48FEF0062CF35 /* LiveViewController.h */,
-				B3019F821DC48FEF0062CF35 /* LiveViewController.m */,
-			);
-			name = Live;
-			sourceTree = "<group>";
-		};
-		B3019F781DC48F150062CF35 /* IM */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F841DC4900A0062CF35 /* IMViewController.h */,
-				B3019F851DC4900A0062CF35 /* IMViewController.m */,
-			);
-			name = IM;
-			sourceTree = "<group>";
-		};
-		B3019F791DC48F310062CF35 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F7E1DC48FE40062CF35 /* CodeViewController.h */,
-				B3019F7F1DC48FE40062CF35 /* CodeViewController.m */,
-			);
-			name = Code;
-			sourceTree = "<group>";
-		};
-		B3019F7A1DC48F400062CF35 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F7B1DC48F730062CF35 /* MeViewController.h */,
-				B3019F7C1DC48F730062CF35 /* MeViewController.m */,
-				EFBCB0B11DC6015C0029648E /* UserInfoViewController.h */,
-				EFBCB0B21DC6015C0029648E /* UserInfoViewController.m */,
-			);
-			name = Me;
-			sourceTree = "<group>";
-		};
-		B33909AF1DC5E52D00E6E3F5 /* Third-party library(手动第三方库) */ = {
+		B33909AF1DC5E52D00E6E3F5 /* 第三方 */ = {
 			isa = PBXGroup;
 			children = (
 				B33909B01DC5E58800E6E3F5 /* ProgressHUD */,
 			);
-			name = "Third-party library(手动第三方库)";
+			name = "第三方";
 			sourceTree = "<group>";
 		};
 		B33909B01DC5E58800E6E3F5 /* ProgressHUD */ = {
@@ -231,132 +376,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EFD7DF531DC4F78A004022D8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EFD7DF5F1DC4F9DE004022D8 /* IM */,
-				EFD7DF5E1DC4F9D6004022D8 /* Live */,
-				EFD7DF5D1DC4F9CF004022D8 /* Code */,
-				EFD7DF5C1DC4F9C9004022D8 /* Me */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		EFD7DF541DC4F791004022D8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F641DC48C390062CF35 /* LaunchScreen.storyboard */,
-				B3019F5F1DC48C390062CF35 /* Main.storyboard */,
-				EFD7DF5B1DC4F9B0004022D8 /* IM */,
-				EFD7DF5A1DC4F9A3004022D8 /* Live */,
-				EFD7DF591DC4F99B004022D8 /* Code */,
-				B3019F6D1DC48C540062CF35 /* TabBar */,
-				EFD7DF561DC4F80E004022D8 /* Me */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		EFD7DF551DC4F79A004022D8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F7A1DC48F400062CF35 /* Me */,
-				EFD7DF571DC4F84F004022D8 /* TabBar */,
-				70A6D5581DC49BA100D8BC1D /* 登录 */,
-				B3019F791DC48F310062CF35 /* Code */,
-				B3019F771DC48EFE0062CF35 /* Live */,
-				B3019F781DC48F150062CF35 /* IM */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		EFD7DF561DC4F80E004022D8 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */,
-				705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */,
-				705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */,
-				705E11171DC4C018007A6795 /* NomalTableViewCell.h */,
-				705E11181DC4C018007A6795 /* NomalTableViewCell.m */,
-				705E11191DC4C018007A6795 /* NomalTableViewCell.xib */,
-				EFBCB0B41DC602350029648E /* IconTableViewCell.h */,
-				EFBCB0B51DC602350029648E /* IconTableViewCell.m */,
-				EFBCB0B61DC602350029648E /* IconTableViewCell.xib */,
-			);
-			name = Me;
-			sourceTree = "<group>";
-		};
-		EFD7DF571DC4F84F004022D8 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F741DC48D190062CF35 /* LJTabBarController.h */,
-				B3019F751DC48D190062CF35 /* LJTabBarController.m */,
-			);
-			name = TabBar;
-			sourceTree = "<group>";
-		};
-		EFD7DF581DC4F873004022D8 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				B3019F591DC48C390062CF35 /* AppDelegate.h */,
-				B3019F5A1DC48C390062CF35 /* AppDelegate.m */,
-			);
-			name = Other;
-			sourceTree = "<group>";
-		};
-		EFD7DF591DC4F99B004022D8 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Code;
-			sourceTree = "<group>";
-		};
-		EFD7DF5A1DC4F9A3004022D8 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Live;
-			sourceTree = "<group>";
-		};
-		EFD7DF5B1DC4F9B0004022D8 /* IM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = IM;
-			sourceTree = "<group>";
-		};
-		EFD7DF5C1DC4F9C9004022D8 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-				EFD7DF611DC4FADA004022D8 /* MeMenu.h */,
-				EFD7DF621DC4FADA004022D8 /* MeMenu.m */,
-			);
-			name = Me;
-			sourceTree = "<group>";
-		};
-		EFD7DF5D1DC4F9CF004022D8 /* Code */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Code;
-			sourceTree = "<group>";
-		};
-		EFD7DF5E1DC4F9D6004022D8 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Live;
-			sourceTree = "<group>";
-		};
-		EFD7DF5F1DC4F9DE004022D8 /* IM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = IM;
-			sourceTree = "<group>";
-		};
 		EFD7DF601DC4F9E8004022D8 /* Category(类别) */ = {
 			isa = PBXGroup;
 			children = (
+				B3019F6E1DC48C8C0062CF35 /* UIImage+image.h */,
+				B3019F6F1DC48C8C0062CF35 /* UIImage+image.m */,
+				70163A281DC723230025DAD7 /* UIColor+iCode.h */,
+				70163A291DC723230025DAD7 /* UIColor+iCode.m */,
 			);
 			name = "Category(类别)";
 			sourceTree = "<group>";
@@ -488,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70163A2A1DC723230025DAD7 /* UIColor+iCode.m in Sources */,
 				B3019F731DC48CD50062CF35 /* LJTaBar.m in Sources */,
 				B3019F801DC48FE40062CF35 /* CodeViewController.m in Sources */,
 				B3019F7D1DC48F730062CF35 /* MeViewController.m in Sources */,
@@ -503,6 +530,7 @@
 				B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */,
 				705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */,
 				705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */,
+				70163A271DC720290025DAD7 /* SLViewController.m in Sources */,
 				B3019F761DC48D190062CF35 /* LJTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

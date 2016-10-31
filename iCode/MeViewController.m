@@ -28,7 +28,7 @@
 }
 
 -(void)initUI{
-    self.navigationController.title = @"我的";
+    self.title = @"我";
     [self.view addSubview:self.tableView];
 }
 
