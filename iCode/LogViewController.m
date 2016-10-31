@@ -1,22 +1,39 @@
 //
-//  LoginViewController.m
+//  LogViewController.m
 //  iCode
 //
-//  Created by SoolyChristina on 2016/10/29.
+//  Created by Mr.Nut on 16/10/31.
 //  Copyright © 2016年 Mr.Nut. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LogViewController.h"
 
-@interface LoginViewController ()
+@interface LogViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation LogViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)loginButton:(UIButton *)sender {
+    [AVUser logInWithUsernameInBackground:self.name.text password:self.password.text block:^(AVUser *user, NSError *error) {
+        if (error == nil) {
+            [self dismissViewControllerAnimated:true completion:^{
+                
+            }];
+        }
+        else{
+            [self dismissViewControllerAnimated:true completion:^{
+                
+            }];
+            [ProgressHUD showError:@"登录失败"];
+
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

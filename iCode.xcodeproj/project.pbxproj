@@ -14,7 +14,6 @@
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
 		705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11191DC4C018007A6795 /* NomalTableViewCell.xib */; };
 		7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060B9821DC7309D0032CE2A /* SLTableViewCell.m */; };
-		70A6D55B1DC49BB800D8BC1D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A6D55A1DC49BB800D8BC1D /* LoginViewController.m */; };
 		B3019F581DC48C390062CF35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F571DC48C390062CF35 /* main.m */; };
 		B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F5A1DC48C390062CF35 /* AppDelegate.m */; };
 		B3019F611DC48C390062CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3019F5F1DC48C390062CF35 /* Main.storyboard */; };
@@ -27,6 +26,9 @@
 		B3019F801DC48FE40062CF35 /* CodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F7F1DC48FE40062CF35 /* CodeViewController.m */; };
 		B3019F831DC48FEF0062CF35 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F821DC48FEF0062CF35 /* LiveViewController.m */; };
 		B3019F861DC4900A0062CF35 /* IMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F851DC4900A0062CF35 /* IMViewController.m */; };
+		B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B304C0D01DC75E3C008CF977 /* loginReginster.storyboard */; };
+		B304C0D61DC75E3C008CF977 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B304C0D21DC75E3C008CF977 /* LogViewController.m */; };
+		B304C0D71DC75E3C008CF977 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B304C0D41DC75E3C008CF977 /* RegisterViewController.m */; };
 		B33909B41DC5E58800E6E3F5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33909B11DC5E58800E6E3F5 /* ProgressHUD.bundle */; };
 		B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B33909B31DC5E58800E6E3F5 /* ProgressHUD.m */; };
 		D8823B94B7821388570A3A0F /* libPods-iCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6F4ADBF1AC4B27C9E3A61 /* libPods-iCode.a */; };
@@ -51,8 +53,6 @@
 		705E11191DC4C018007A6795 /* NomalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomalTableViewCell.xib; sourceTree = "<group>"; };
 		7060B9811DC7309D0032CE2A /* SLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableViewCell.h; sourceTree = "<group>"; };
 		7060B9821DC7309D0032CE2A /* SLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCell.m; sourceTree = "<group>"; };
-		70A6D5591DC49BB800D8BC1D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		70A6D55A1DC49BB800D8BC1D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A4615F70D2BBE6A2ADFD15FB /* Pods-iCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCode/Pods-iCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B3019F531DC48C390062CF35 /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3019F571DC48C390062CF35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +76,11 @@
 		B3019F821DC48FEF0062CF35 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
 		B3019F841DC4900A0062CF35 /* IMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMViewController.h; sourceTree = "<group>"; };
 		B3019F851DC4900A0062CF35 /* IMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMViewController.m; sourceTree = "<group>"; };
+		B304C0D01DC75E3C008CF977 /* loginReginster.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = loginReginster.storyboard; sourceTree = "<group>"; };
+		B304C0D11DC75E3C008CF977 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		B304C0D21DC75E3C008CF977 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		B304C0D31DC75E3C008CF977 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B304C0D41DC75E3C008CF977 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		B33909AE1DC5E1E800E6E3F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B33909B11DC5E58800E6E3F5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B33909B21DC5E58800E6E3F5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
@@ -296,8 +301,11 @@
 		70A6D5581DC49BA100D8BC1D /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
-				70A6D5591DC49BB800D8BC1D /* LoginViewController.h */,
-				70A6D55A1DC49BB800D8BC1D /* LoginViewController.m */,
+				B304C0D01DC75E3C008CF977 /* loginReginster.storyboard */,
+				B304C0D11DC75E3C008CF977 /* LogViewController.h */,
+				B304C0D21DC75E3C008CF977 /* LogViewController.m */,
+				B304C0D31DC75E3C008CF977 /* RegisterViewController.h */,
+				B304C0D41DC75E3C008CF977 /* RegisterViewController.m */,
 			);
 			name = "登录";
 			sourceTree = "<group>";
@@ -458,6 +466,7 @@
 				EFBCB0B81DC602350029648E /* IconTableViewCell.xib in Resources */,
 				B33909B41DC5E58800E6E3F5 /* ProgressHUD.bundle in Resources */,
 				705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */,
+				B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */,
 				B3019F661DC48C390062CF35 /* LaunchScreen.storyboard in Resources */,
 				B3019F631DC48C390062CF35 /* Assets.xcassets in Resources */,
 				B3019F611DC48C390062CF35 /* Main.storyboard in Resources */,
@@ -524,16 +533,17 @@
 				B3019F801DC48FE40062CF35 /* CodeViewController.m in Sources */,
 				B3019F7D1DC48F730062CF35 /* MeViewController.m in Sources */,
 				B3019F701DC48C8C0062CF35 /* UIImage+image.m in Sources */,
-				70A6D55B1DC49BB800D8BC1D /* LoginViewController.m in Sources */,
 				EFBCB0B31DC6015C0029648E /* UserInfoViewController.m in Sources */,
 				EFD7DF631DC4FADA004022D8 /* MeMenu.m in Sources */,
 				B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */,
 				7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */,
 				B3019F831DC48FEF0062CF35 /* LiveViewController.m in Sources */,
+				B304C0D61DC75E3C008CF977 /* LogViewController.m in Sources */,
 				B3019F581DC48C390062CF35 /* main.m in Sources */,
 				EFBCB0B71DC602350029648E /* IconTableViewCell.m in Sources */,
 				B3019F861DC4900A0062CF35 /* IMViewController.m in Sources */,
 				B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */,
+				B304C0D71DC75E3C008CF977 /* RegisterViewController.m in Sources */,
 				705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */,
 				705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */,
 				70163A271DC720290025DAD7 /* SLViewController.m in Sources */,
