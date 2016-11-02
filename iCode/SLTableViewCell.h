@@ -10,6 +10,8 @@
 
 @interface SLTableViewCell : UITableViewCell
 
+@property (nonatomic,strong) NSDictionary *dataDic;
+
 +(SLTableViewCell *)tableViewCellWithTableView:(UITableView *)tableView andIndexPath:(NSIndexPath *)indexPath;
 
 @end

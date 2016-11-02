@@ -10,6 +10,8 @@
 
 @interface UserInfoTableViewCell : UITableViewCell
 
+@property (nonatomic,strong) NSDictionary *dataDic;
+
 +(UserInfoTableViewCell *)userInfoTableViewCellWithTableView:(UITableView *)tableView;
 
 @end

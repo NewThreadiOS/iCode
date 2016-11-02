@@ -45,4 +45,11 @@
     return cell;
 }
 
+-(void)setDataDic:(NSDictionary *)dataDic{
+    _dataDic = dataDic;
+    self.nameLabel.text = dataDic[@"userName"];
+    self.detailLabel.text = [NSString stringWithFormat:@"微信号%@",dataDic[@"userAccount"]];
+    self.imageView.image = [UIImage imageNamed:dataDic[@"userIcon"]];
+}
+
 @end

@@ -10,4 +10,6 @@
 
 @interface MeViewController : UIViewController
 
+@property (nonatomic,strong) NSDictionary *dataDic; //数据
+
 @end

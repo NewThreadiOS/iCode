@@ -16,11 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    self.view.backgroundColor = [UIColor redColor];
     UIStoryboard * stroy = [UIStoryboard storyboardWithName:@"loginReginster" bundle:nil];
     LogViewController * logVC = [stroy instantiateViewControllerWithIdentifier:@"login"];
-    [self presentViewController:logVC animated:true completion:^{
+    [self presentViewController:logVC animated:NO completion:^{
         
     }];
 

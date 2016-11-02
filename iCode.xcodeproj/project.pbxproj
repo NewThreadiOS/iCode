@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		70163A271DC720290025DAD7 /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70163A261DC720290025DAD7 /* SLViewController.m */; };
 		70163A2A1DC723230025DAD7 /* UIColor+iCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 70163A291DC723230025DAD7 /* UIColor+iCode.m */; };
+		7035F6971DCA1295000D7151 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6891DCA1295000D7151 /* LewPopupBackgroundView.m */; };
+		7035F6981DCA1295000D7151 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F68B1DCA1295000D7151 /* LewPopupViewAnimationDrop.m */; };
+		7035F6991DCA1295000D7151 /* LewPopupViewAnimationFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F68D1DCA1295000D7151 /* LewPopupViewAnimationFade.m */; };
+		7035F69A1DCA1295000D7151 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F68F1DCA1295000D7151 /* LewPopupViewAnimationSlide.m */; };
+		7035F69B1DCA1295000D7151 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */; };
+		7035F69C1DCA1295000D7151 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */; };
+		7035F69D1DCA1295000D7151 /* ChangeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6951DCA1295000D7151 /* ChangeDataView.m */; };
+		7035F69E1DCA1295000D7151 /* ChangeDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7035F6961DCA1295000D7151 /* ChangeDataView.xib */; };
 		705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */; };
 		705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */; };
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
@@ -45,6 +53,22 @@
 		70163A261DC720290025DAD7 /* SLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
 		70163A281DC723230025DAD7 /* UIColor+iCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iCode.h"; sourceTree = "<group>"; };
 		70163A291DC723230025DAD7 /* UIColor+iCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iCode.m"; sourceTree = "<group>"; };
+		7035F6871DCA1295000D7151 /* LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewController.h; sourceTree = "<group>"; };
+		7035F6881DCA1295000D7151 /* LewPopupBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupBackgroundView.h; sourceTree = "<group>"; };
+		7035F6891DCA1295000D7151 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
+		7035F68A1DCA1295000D7151 /* LewPopupViewAnimationDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationDrop.h; sourceTree = "<group>"; };
+		7035F68B1DCA1295000D7151 /* LewPopupViewAnimationDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationDrop.m; sourceTree = "<group>"; };
+		7035F68C1DCA1295000D7151 /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
+		7035F68D1DCA1295000D7151 /* LewPopupViewAnimationFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationFade.m; sourceTree = "<group>"; };
+		7035F68E1DCA1295000D7151 /* LewPopupViewAnimationSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSlide.h; sourceTree = "<group>"; };
+		7035F68F1DCA1295000D7151 /* LewPopupViewAnimationSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSlide.m; sourceTree = "<group>"; };
+		7035F6901DCA1295000D7151 /* LewPopupViewAnimationSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationSpring.h; sourceTree = "<group>"; };
+		7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
+		7035F6921DCA1295000D7151 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
+		7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
+		7035F6941DCA1295000D7151 /* ChangeDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDataView.h; sourceTree = "<group>"; };
+		7035F6951DCA1295000D7151 /* ChangeDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDataView.m; sourceTree = "<group>"; };
+		7035F6961DCA1295000D7151 /* ChangeDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeDataView.xib; sourceTree = "<group>"; };
 		705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
 		705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
 		705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -197,6 +221,7 @@
 				B3019F591DC48C390062CF35 /* AppDelegate.h */,
 				B3019F5A1DC48C390062CF35 /* AppDelegate.m */,
 				70163A241DC71FFD0025DAD7 /* SLNavigationController */,
+				7035F6861DCA1268000D7151 /* popupAnimation */,
 				B33909AF1DC5E52D00E6E3F5 /* 第三方 */,
 				EFD7DF601DC4F9E8004022D8 /* Category(类别) */,
 				B3019F6D1DC48C540062CF35 /* TabBar */,
@@ -296,6 +321,29 @@
 				70163A261DC720290025DAD7 /* SLViewController.m */,
 			);
 			name = SLNavigationController;
+			sourceTree = "<group>";
+		};
+		7035F6861DCA1268000D7151 /* popupAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				7035F6871DCA1295000D7151 /* LewPopupViewController.h */,
+				7035F6881DCA1295000D7151 /* LewPopupBackgroundView.h */,
+				7035F6891DCA1295000D7151 /* LewPopupBackgroundView.m */,
+				7035F68A1DCA1295000D7151 /* LewPopupViewAnimationDrop.h */,
+				7035F68B1DCA1295000D7151 /* LewPopupViewAnimationDrop.m */,
+				7035F68C1DCA1295000D7151 /* LewPopupViewAnimationFade.h */,
+				7035F68D1DCA1295000D7151 /* LewPopupViewAnimationFade.m */,
+				7035F68E1DCA1295000D7151 /* LewPopupViewAnimationSlide.h */,
+				7035F68F1DCA1295000D7151 /* LewPopupViewAnimationSlide.m */,
+				7035F6901DCA1295000D7151 /* LewPopupViewAnimationSpring.h */,
+				7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */,
+				7035F6921DCA1295000D7151 /* UIViewController+LewPopupViewController.h */,
+				7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */,
+				7035F6941DCA1295000D7151 /* ChangeDataView.h */,
+				7035F6951DCA1295000D7151 /* ChangeDataView.m */,
+				7035F6961DCA1295000D7151 /* ChangeDataView.xib */,
+			);
+			name = popupAnimation;
 			sourceTree = "<group>";
 		};
 		70A6D5581DC49BA100D8BC1D /* 登录 */ = {
@@ -469,6 +517,7 @@
 				B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */,
 				B3019F661DC48C390062CF35 /* LaunchScreen.storyboard in Resources */,
 				B3019F631DC48C390062CF35 /* Assets.xcassets in Resources */,
+				7035F69E1DCA1295000D7151 /* ChangeDataView.xib in Resources */,
 				B3019F611DC48C390062CF35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,26 +577,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7035F6981DCA1295000D7151 /* LewPopupViewAnimationDrop.m in Sources */,
 				70163A2A1DC723230025DAD7 /* UIColor+iCode.m in Sources */,
 				B3019F731DC48CD50062CF35 /* LJTaBar.m in Sources */,
 				B3019F801DC48FE40062CF35 /* CodeViewController.m in Sources */,
 				B3019F7D1DC48F730062CF35 /* MeViewController.m in Sources */,
 				B3019F701DC48C8C0062CF35 /* UIImage+image.m in Sources */,
 				EFBCB0B31DC6015C0029648E /* UserInfoViewController.m in Sources */,
+				7035F69A1DCA1295000D7151 /* LewPopupViewAnimationSlide.m in Sources */,
 				EFD7DF631DC4FADA004022D8 /* MeMenu.m in Sources */,
+				7035F69B1DCA1295000D7151 /* LewPopupViewAnimationSpring.m in Sources */,
 				B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */,
 				7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */,
 				B3019F831DC48FEF0062CF35 /* LiveViewController.m in Sources */,
 				B304C0D61DC75E3C008CF977 /* LogViewController.m in Sources */,
 				B3019F581DC48C390062CF35 /* main.m in Sources */,
 				EFBCB0B71DC602350029648E /* IconTableViewCell.m in Sources */,
+				7035F6991DCA1295000D7151 /* LewPopupViewAnimationFade.m in Sources */,
 				B3019F861DC4900A0062CF35 /* IMViewController.m in Sources */,
 				B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */,
+				7035F69D1DCA1295000D7151 /* ChangeDataView.m in Sources */,
 				B304C0D71DC75E3C008CF977 /* RegisterViewController.m in Sources */,
 				705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */,
+				7035F6971DCA1295000D7151 /* LewPopupBackgroundView.m in Sources */,
 				705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */,
 				70163A271DC720290025DAD7 /* SLViewController.m in Sources */,
 				B3019F761DC48D190062CF35 /* LJTabBarController.m in Sources */,
+				7035F69C1DCA1295000D7151 /* UIViewController+LewPopupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

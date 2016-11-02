@@ -59,6 +59,14 @@
     }
     return _tableView;
 }
+//模拟数据
+-(NSDictionary *)dataDic{
+    if (!_dataDic) {
+        _dataDic = [NSMutableDictionary dictionary];
+        _dataDic = @{@"userAccount":@"big",@"userNickName":@"孤独求败",@"userName":@"刁近乎",@"userIcon":@"xjp",@"userRegion":@"湖北 武汉",@"userSex":@"男",@"userMoto":@"爱上编程爱上iCode!"};
+    }
+    return _dataDic;
+}
 
 #pragma mark - tableView方法
 
@@ -114,6 +122,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==0 && indexPath.row == 0) {
         UserInfoViewController *userInfoVc = [[UserInfoViewController alloc]init];
+        userInfoVc.dataDic = self.dataDic;
         [self.navigationController pushViewController:userInfoVc animated:YES];
     }
 }

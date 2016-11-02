@@ -9,6 +9,7 @@
 #import "UserInfoViewController.h"
 #import "IconTableViewCell.h"
 #import "SLTableViewCell.h"
+#import "ChangeDataView.h"
 
 @interface UserInfoViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -66,9 +67,26 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==0 && indexPath.row == 0) {
         IconTableViewCell *cell = [IconTableViewCell iconTableViewCellWithTableView:tableView];
+//        cell.imageView.image = [UIImage imageNamed:self.dataDic[@"userIcon"]];
         return cell;
     }else{
         SLTableViewCell *cell = [SLTableViewCell tableViewCellWithTableView:tableView andIndexPath:indexPath];
+        if (indexPath.section == 0 && indexPath.row == 1) {
+            cell.textLabel.text = @"昵称";
+            cell.detailTextLabel.text = self.dataDic[@"userNickName"];
+        }else if (indexPath.section == 0 && indexPath.row == 2){
+            cell.textLabel.text = @"账号";
+            cell.detailTextLabel.text = self.dataDic[@"userAccount"];
+        }else if (indexPath.section == 1 && indexPath.row == 0){
+            cell.textLabel.text = @"姓名";
+            cell.detailTextLabel.text = self.dataDic[@"userName"];
+        }else if (indexPath.section == 1 && indexPath.row == 1){
+            cell.textLabel.text = @"地区";
+            cell.detailTextLabel.text = self.dataDic[@"userRegion"];
+        }else if (indexPath.section == 1 && indexPath.row == 2){
+            cell.textLabel.text = @"个人介绍";
+            cell.detailTextLabel.text = self.dataDic[@"userMoto"];
+        }
         return cell;
     }
 }
@@ -87,5 +105,17 @@
     return 25;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0 && indexPath.row == 1) {
+        ChangeDataView *changeView = [ChangeDataView changeData];
+        changeView.parentVC = self;
+        changeView.tittleLabel.text = @"更改昵称";
+        changeView.dataStr = self.dataDic[@"userNickName"];
+        NSLog(@"%@",self.dataDic[@"userNickName"]);
+        [self lew_presentPopupView:changeView animation:[LewPopupViewAnimationSpring new] dismissed:^{
+            
+        }];
+    }
+}
 
 @end
