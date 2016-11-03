@@ -15,13 +15,13 @@
 		7035F69A1DCA1295000D7151 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F68F1DCA1295000D7151 /* LewPopupViewAnimationSlide.m */; };
 		7035F69B1DCA1295000D7151 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */; };
 		7035F69C1DCA1295000D7151 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */; };
-		7035F69D1DCA1295000D7151 /* ChangeDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6951DCA1295000D7151 /* ChangeDataView.m */; };
-		7035F69E1DCA1295000D7151 /* ChangeDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7035F6961DCA1295000D7151 /* ChangeDataView.xib */; };
 		705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */; };
 		705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */; };
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
 		705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11191DC4C018007A6795 /* NomalTableViewCell.xib */; };
 		7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060B9821DC7309D0032CE2A /* SLTableViewCell.m */; };
+		708AB3A01DCB37930043775F /* ChangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708AB39F1DCB37930043775F /* ChangeView.xib */; };
+		708AB3A31DCB37A10043775F /* ChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 708AB3A21DCB37A10043775F /* ChangeView.m */; };
 		B3019F581DC48C390062CF35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F571DC48C390062CF35 /* main.m */; };
 		B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F5A1DC48C390062CF35 /* AppDelegate.m */; };
 		B3019F611DC48C390062CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3019F5F1DC48C390062CF35 /* Main.storyboard */; };
@@ -66,9 +66,6 @@
 		7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupViewAnimationSpring.m; sourceTree = "<group>"; };
 		7035F6921DCA1295000D7151 /* UIViewController+LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LewPopupViewController.h"; sourceTree = "<group>"; };
 		7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
-		7035F6941DCA1295000D7151 /* ChangeDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDataView.h; sourceTree = "<group>"; };
-		7035F6951DCA1295000D7151 /* ChangeDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDataView.m; sourceTree = "<group>"; };
-		7035F6961DCA1295000D7151 /* ChangeDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeDataView.xib; sourceTree = "<group>"; };
 		705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
 		705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
 		705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -77,6 +74,9 @@
 		705E11191DC4C018007A6795 /* NomalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomalTableViewCell.xib; sourceTree = "<group>"; };
 		7060B9811DC7309D0032CE2A /* SLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLTableViewCell.h; sourceTree = "<group>"; };
 		7060B9821DC7309D0032CE2A /* SLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLTableViewCell.m; sourceTree = "<group>"; };
+		708AB39F1DCB37930043775F /* ChangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeView.xib; sourceTree = "<group>"; };
+		708AB3A11DCB37A10043775F /* ChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeView.h; sourceTree = "<group>"; };
+		708AB3A21DCB37A10043775F /* ChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeView.m; sourceTree = "<group>"; };
 		A4615F70D2BBE6A2ADFD15FB /* Pods-iCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCode/Pods-iCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B3019F531DC48C390062CF35 /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3019F571DC48C390062CF35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -339,9 +339,9 @@
 				7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */,
 				7035F6921DCA1295000D7151 /* UIViewController+LewPopupViewController.h */,
 				7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */,
-				7035F6941DCA1295000D7151 /* ChangeDataView.h */,
-				7035F6951DCA1295000D7151 /* ChangeDataView.m */,
-				7035F6961DCA1295000D7151 /* ChangeDataView.xib */,
+				708AB39F1DCB37930043775F /* ChangeView.xib */,
+				708AB3A11DCB37A10043775F /* ChangeView.h */,
+				708AB3A21DCB37A10043775F /* ChangeView.m */,
 			);
 			name = popupAnimation;
 			sourceTree = "<group>";
@@ -515,9 +515,9 @@
 				B33909B41DC5E58800E6E3F5 /* ProgressHUD.bundle in Resources */,
 				705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */,
 				B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */,
+				708AB3A01DCB37930043775F /* ChangeView.xib in Resources */,
 				B3019F661DC48C390062CF35 /* LaunchScreen.storyboard in Resources */,
 				B3019F631DC48C390062CF35 /* Assets.xcassets in Resources */,
-				7035F69E1DCA1295000D7151 /* ChangeDataView.xib in Resources */,
 				B3019F611DC48C390062CF35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,11 +596,11 @@
 				7035F6991DCA1295000D7151 /* LewPopupViewAnimationFade.m in Sources */,
 				B3019F861DC4900A0062CF35 /* IMViewController.m in Sources */,
 				B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */,
-				7035F69D1DCA1295000D7151 /* ChangeDataView.m in Sources */,
 				B304C0D71DC75E3C008CF977 /* RegisterViewController.m in Sources */,
 				705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */,
 				7035F6971DCA1295000D7151 /* LewPopupBackgroundView.m in Sources */,
 				705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */,
+				708AB3A31DCB37A10043775F /* ChangeView.m in Sources */,
 				70163A271DC720290025DAD7 /* SLViewController.m in Sources */,
 				B3019F761DC48D190062CF35 /* LJTabBarController.m in Sources */,
 				7035F69C1DCA1295000D7151 /* UIViewController+LewPopupViewController.m in Sources */,

@@ -63,7 +63,8 @@
 -(NSDictionary *)dataDic{
     if (!_dataDic) {
         _dataDic = [NSMutableDictionary dictionary];
-        _dataDic = @{@"userAccount":@"big",@"userNickName":@"孤独求败",@"userName":@"刁近乎",@"userIcon":@"xjp",@"userRegion":@"湖北 武汉",@"userSex":@"男",@"userMoto":@"爱上编程爱上iCode!"};
+        _dataDic = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"big",@"userAccount",@"孤独求败",@"userNickName",@"刁近乎",@"userName",@"xjp",@"userIcon",@"湖北 武汉",@"userRegion",@"男",@"userSex",@"收到了开放接口都是浪费",@"userMoto", nil];
+        NSLog(@"%@",_dataDic);
     }
     return _dataDic;
 }

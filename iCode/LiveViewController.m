@@ -16,11 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIStoryboard * stroy = [UIStoryboard storyboardWithName:@"loginReginster" bundle:nil];
-    LogViewController * logVC = [stroy instantiateViewControllerWithIdentifier:@"login"];
-    [self presentViewController:logVC animated:NO completion:^{
-        
-    }];
+//    UIStoryboard * stroy = [UIStoryboard storyboardWithName:@"loginReginster" bundle:nil];
+//    LogViewController * logVC = [stroy instantiateViewControllerWithIdentifier:@"login"];
+//    [self presentViewController:logVC animated:NO completion:^{
+//        
+//    }];
 
     // Do any additional setup after loading the view.
 }

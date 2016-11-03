@@ -10,6 +10,8 @@
 
 @interface UserInfoViewController : UIViewController
 
-@property (nonatomic,strong) NSDictionary *dataDic; //数据
+@property (nonatomic,strong) NSMutableDictionary *dataDic; //数据
+@property (nonatomic,strong) UITableView *tableView;
+
 
 @end

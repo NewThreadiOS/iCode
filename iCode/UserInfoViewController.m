@@ -9,11 +9,10 @@
 #import "UserInfoViewController.h"
 #import "IconTableViewCell.h"
 #import "SLTableViewCell.h"
-#import "ChangeDataView.h"
+#import "ChangeView.h"
 
 @interface UserInfoViewController () <UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong) UITableView *tableView;
 
 @end
 
@@ -106,15 +105,28 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //当点击指定行的cell时创建 更改数据的view
     if (indexPath.section == 0 && indexPath.row == 1) {
-        ChangeDataView *changeView = [ChangeDataView changeData];
-        changeView.parentVC = self;
-        changeView.tittleLabel.text = @"更改昵称";
-        changeView.dataStr = self.dataDic[@"userNickName"];
-        NSLog(@"%@",self.dataDic[@"userNickName"]);
-        [self lew_presentPopupView:changeView animation:[LewPopupViewAnimationSpring new] dismissed:^{
-            
-        }];
+        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改昵称"
+                                                           andDataStr:self.dataDic[@"userNickName"]];
+        changeView.userInfoVC = self;
+        [self lew_presentPopupView:changeView
+                         animation:[LewPopupViewAnimationSpring new] dismissed:^{
+                             }];
+    }if (indexPath.section == 1 && indexPath.row == 0) {
+        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改姓名"
+                                                           andDataStr:self.dataDic[@"userName"]];
+        changeView.userInfoVC = self;
+        [self lew_presentPopupView:changeView
+                         animation:[LewPopupViewAnimationSpring new] dismissed:^{
+                         }];
+    }if (indexPath.section == 1 && indexPath.row == 2) {
+        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改个性签名"
+                                                           andDataStr:self.dataDic[@"userMoto"]];
+        changeView.userInfoVC = self;
+        [self lew_presentPopupView:changeView
+                         animation:[LewPopupViewAnimationSpring new] dismissed:^{
+                         }];
     }
 }
 
