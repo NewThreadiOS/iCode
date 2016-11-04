@@ -11,7 +11,7 @@
 #import "SLTableViewCell.h"
 #import "ChangeView.h"
 
-@interface UserInfoViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface UserInfoViewController () <UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 
 @end
@@ -66,7 +66,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section ==0 && indexPath.row == 0) {
         IconTableViewCell *cell = [IconTableViewCell iconTableViewCellWithTableView:tableView];
-//        cell.imageView.image = [UIImage imageNamed:self.dataDic[@"userIcon"]];
+        cell.Vc = self;
         return cell;
     }else{
         SLTableViewCell *cell = [SLTableViewCell tableViewCellWithTableView:tableView andIndexPath:indexPath];
@@ -107,27 +107,38 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //当点击指定行的cell时创建 更改数据的view
     if (indexPath.section == 0 && indexPath.row == 1) {
-        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改昵称"
-                                                           andDataStr:self.dataDic[@"userNickName"]];
+        ChangeView *changeView = [[ChangeView alloc ]changeViewWithTittleName:@"更改昵称"
+                                                              dataStr:self.dataDic[@"userNickName"]
+                                                           userInfoVc:self];
         changeView.userInfoVC = self;
         [self lew_presentPopupView:changeView
                          animation:[LewPopupViewAnimationSpring new] dismissed:^{
                              }];
     }if (indexPath.section == 1 && indexPath.row == 0) {
-        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改姓名"
-                                                           andDataStr:self.dataDic[@"userName"]];
+        ChangeView *changeView = [[ChangeView alloc ]changeViewWithTittleName:@"更改姓名"
+                                                                      dataStr:self.dataDic[@"userName"]
+                                                                   userInfoVc:self];
         changeView.userInfoVC = self;
         [self lew_presentPopupView:changeView
                          animation:[LewPopupViewAnimationSpring new] dismissed:^{
                          }];
     }if (indexPath.section == 1 && indexPath.row == 2) {
-        ChangeView *changeView = [ChangeView changeViewWithTittleName:@"更改个性签名"
-                                                           andDataStr:self.dataDic[@"userMoto"]];
+        ChangeView *changeView = [[ChangeView alloc ]changeViewWithTittleName:@"更改个性签名"
+                                                                      dataStr:self.dataDic[@"userMoto"]
+                                                                   userInfoVc:self];
         changeView.userInfoVC = self;
         [self lew_presentPopupView:changeView
                          animation:[LewPopupViewAnimationSpring new] dismissed:^{
                          }];
     }
+}
+
+#pragma mark - imagePickerController方法
+
+//选择完成
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    NSLog(@"选择完成");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="356" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="356" height="65"/>
+                <rect key="frame" x="0.0" y="0.0" width="356" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPS-8p-jDP">
@@ -31,10 +31,14 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESw-y1-bdf">
                         <rect key="frame" x="284.5" y="8" width="48.5" height="48.5"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="ESw-y1-bdf" secondAttribute="height" id="fp0-mO-e3s"/>
                         </constraints>
                         <state key="normal" backgroundImage="xjp"/>
+                        <connections>
+                            <action selector="iconClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="M66-x1-mcK"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -45,7 +49,10 @@
                     <constraint firstItem="ESw-y1-bdf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="wCv-eA-XG4"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="43" y="62.5"/>
+            <connections>
+                <outlet property="iconBtn" destination="ESw-y1-bdf" id="WMY-I9-teX"/>
+            </connections>
+            <point key="canvasLocation" x="-367" y="110"/>
         </tableViewCell>
     </objects>
     <resources>

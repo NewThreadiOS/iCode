@@ -16,6 +16,8 @@
 @property (nonatomic, weak) UserInfoViewController *userInfoVC;
 @property (weak, nonatomic) IBOutlet UILabel *tittleLabel;
 
-+ (ChangeView *)changeViewWithTittleName:(NSString *)name andDataStr:(NSString *)str;
+- (ChangeView *)changeViewWithTittleName:(NSString *)name
+                                 dataStr:(NSString *)str
+                              userInfoVc:(UserInfoViewController *)Vc;
 
 @end

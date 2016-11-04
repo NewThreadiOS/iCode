@@ -16,7 +16,6 @@
 		7035F69B1DCA1295000D7151 /* LewPopupViewAnimationSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6911DCA1295000D7151 /* LewPopupViewAnimationSpring.m */; };
 		7035F69C1DCA1295000D7151 /* UIViewController+LewPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */; };
 		705E11151DC4BC1F007A6795 /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */; };
-		705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */; };
 		705E111A1DC4C018007A6795 /* NomalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 705E11181DC4C018007A6795 /* NomalTableViewCell.m */; };
 		705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 705E11191DC4C018007A6795 /* NomalTableViewCell.xib */; };
 		7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060B9821DC7309D0032CE2A /* SLTableViewCell.m */; };
@@ -40,6 +39,7 @@
 		B33909B41DC5E58800E6E3F5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33909B11DC5E58800E6E3F5 /* ProgressHUD.bundle */; };
 		B33909B51DC5E58800E6E3F5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B33909B31DC5E58800E6E3F5 /* ProgressHUD.m */; };
 		D8823B94B7821388570A3A0F /* libPods-iCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6F4ADBF1AC4B27C9E3A61 /* libPods-iCode.a */; };
+		EF3D3CC31DCCCDCC009F17ED /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3D3CC01DCCCDCC009F17ED /* UserInfoTableViewCell.xib */; };
 		EFBCB0B31DC6015C0029648E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBCB0B21DC6015C0029648E /* UserInfoViewController.m */; };
 		EFBCB0B71DC602350029648E /* IconTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBCB0B51DC602350029648E /* IconTableViewCell.m */; };
 		EFBCB0B81DC602350029648E /* IconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBCB0B61DC602350029648E /* IconTableViewCell.xib */; };
@@ -68,7 +68,6 @@
 		7035F6931DCA1295000D7151 /* UIViewController+LewPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LewPopupViewController.m"; sourceTree = "<group>"; };
 		705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
 		705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
-		705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		705E11171DC4C018007A6795 /* NomalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NomalTableViewCell.h; sourceTree = "<group>"; };
 		705E11181DC4C018007A6795 /* NomalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NomalTableViewCell.m; sourceTree = "<group>"; };
 		705E11191DC4C018007A6795 /* NomalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomalTableViewCell.xib; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		B33909B11DC5E58800E6E3F5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		B33909B21DC5E58800E6E3F5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		B33909B31DC5E58800E6E3F5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		EF3D3CC01DCCCDCC009F17ED /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
 		EFBCB0B11DC6015C0029648E /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		EFBCB0B21DC6015C0029648E /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		EFBCB0B41DC602350029648E /* IconTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTableViewCell.h; sourceTree = "<group>"; };
@@ -299,9 +299,9 @@
 		70163A231DC71E740025DAD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D3CC01DCCCDCC009F17ED /* UserInfoTableViewCell.xib */,
 				705E11121DC4BC1F007A6795 /* UserInfoTableViewCell.h */,
 				705E11131DC4BC1F007A6795 /* UserInfoTableViewCell.m */,
-				705E11141DC4BC1F007A6795 /* UserInfoTableViewCell.xib */,
 				705E11171DC4C018007A6795 /* NomalTableViewCell.h */,
 				705E11181DC4C018007A6795 /* NomalTableViewCell.m */,
 				705E11191DC4C018007A6795 /* NomalTableViewCell.xib */,
@@ -510,13 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD7DF521DC4F6A0004022D8 /* dataArr.plist in Resources */,
-				705E11161DC4BC1F007A6795 /* UserInfoTableViewCell.xib in Resources */,
 				EFBCB0B81DC602350029648E /* IconTableViewCell.xib in Resources */,
 				B33909B41DC5E58800E6E3F5 /* ProgressHUD.bundle in Resources */,
 				705E111B1DC4C018007A6795 /* NomalTableViewCell.xib in Resources */,
 				B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */,
 				708AB3A01DCB37930043775F /* ChangeView.xib in Resources */,
 				B3019F661DC48C390062CF35 /* LaunchScreen.storyboard in Resources */,
+				EF3D3CC31DCCCDCC009F17ED /* UserInfoTableViewCell.xib in Resources */,
 				B3019F631DC48C390062CF35 /* Assets.xcassets in Resources */,
 				B3019F611DC48C390062CF35 /* Main.storyboard in Resources */,
 			);

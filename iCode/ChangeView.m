@@ -24,7 +24,9 @@ NSInteger type;
     return self;
 }
 
-+ (ChangeView *)changeViewWithTittleName:(NSString *)name andDataStr:(NSString *)str{
+- (ChangeView *)changeViewWithTittleName:(NSString *)name
+                                 dataStr:(NSString *)str
+                              userInfoVc:(UserInfoViewController *)Vc{
     ChangeView *changeView = [[ChangeView alloc]initWithXib];
     changeView.tittleLabel.text = name;
     changeView.dataStr = str;
@@ -35,8 +37,32 @@ NSInteger type;
     }else{
         type = 2;
     }
+
+    changeView.layer.cornerRadius = 8.0;
+    changeView.layer.backgroundColor = [UIColor whiteColor].CGColor;
+//    changeView.layer.masksToBounds = YES;
+    
+    //阴影
+    CALayer *subLayer = [CALayer layer];
+    subLayer.backgroundColor = [UIColor grayColor].CGColor;
+    subLayer.shadowOffset = CGSizeMake(0, 3);
+    subLayer.shadowRadius = 5.0;
+    subLayer.shadowColor = [UIColor blackColor].CGColor;
+    subLayer.shadowOpacity = 0.8;
+    subLayer.frame = changeView.layer.frame;
+    subLayer.cornerRadius = 8.0;
+//    subLayer.masksToBounds = NO;
+    [changeView.layer insertSublayer:subLayer atIndex:0];
+
+    
+    //缓存视图渲染内容
+    self.layer.shouldRasterize = YES;
+    self.layer.rasterizationScale = [[UIScreen mainScreen] scale];
+    
     return changeView;
 }
+
+
 
 -(void)setDataStr:(NSString *)dataStr{
     _dataStr = dataStr;
@@ -45,15 +71,12 @@ NSInteger type;
 
 - (IBAction)okClick:(id)sender {
     if (type == 0) {
-        [self.userInfoVC.dataDic removeObjectForKey:@"userName"];
         [self.userInfoVC.dataDic setObject:self.textField.text forKey:@"userName"];
         [self.userInfoVC.tableView reloadData];
     }else if (type == 1){
-        [self.userInfoVC.dataDic removeObjectForKey:@"userNickName"];
         [self.userInfoVC.dataDic setObject:self.textField.text forKey:@"userNickName"];
         [self.userInfoVC.tableView reloadData];
     }else{
-        [self.userInfoVC.dataDic removeObjectForKey:@"userMoto"];
         [self.userInfoVC.dataDic setObject:self.textField.text forKey:@"userMoto"];
         [self.userInfoVC.tableView reloadData];
     }

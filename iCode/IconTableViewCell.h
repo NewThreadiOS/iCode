@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserInfoViewController.h"
 
 @interface IconTableViewCell : UITableViewCell
+
+@property (nonatomic,weak) UserInfoViewController *Vc;
 
 +(IconTableViewCell *)iconTableViewCellWithTableView:(UITableView *)tableView;
 

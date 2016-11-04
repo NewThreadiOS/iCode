@@ -25,7 +25,6 @@
  */
 @property (weak, nonatomic) IBOutlet UILabel *detailLabel;
 
-
 @end
 
 @implementation UserInfoTableViewCell
@@ -39,8 +38,7 @@
     static NSString *reuseID = @"reuseID";
     UserInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]lastObject];
-        
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"UserInfoTableViewCell" owner:nil options:nil]firstObject];
     }
     return cell;
 }
@@ -51,5 +49,7 @@
     self.detailLabel.text = [NSString stringWithFormat:@"微信号%@",dataDic[@"userAccount"]];
     self.imageView.image = [UIImage imageNamed:dataDic[@"userIcon"]];
 }
+
+
 
 @end

@@ -116,33 +116,6 @@
     popupView.tag = kLEWPopupViewTag;
 //    popupView.layer.shadowPath = [UIBezierPath bezierPathWithRect:popupView.bounds].CGPath;
     
-    popupView.layer.cornerRadius = 8.0;
-    popupView.layer.backgroundColor = [UIColor whiteColor].CGColor;
-//    popupView.layer.masksToBounds = YES;
-    
-    //阴影
-    CALayer *subLayer = [CALayer layer];
-    subLayer.backgroundColor = [UIColor grayColor].CGColor;
-    subLayer.shadowOffset = CGSizeMake(0, 3);
-    subLayer.shadowRadius = 5.0;
-    subLayer.shadowColor = [UIColor blackColor].CGColor;
-    subLayer.shadowOpacity = 0.8;
-    subLayer.frame = popupView.layer.frame;
-    subLayer.cornerRadius = 8.0;
-    subLayer.masksToBounds = NO;
-    [popupView.layer insertSublayer:subLayer atIndex:0];
-    
-    //圆角
-//    CALayer *radiusLayer = [CALayer layer];
-//    radiusLayer.backgroundColor = [UIColor blackColor].CGColor;
-//    radiusLayer.cornerRadius = 8.0;
-//    radiusLayer.masksToBounds = YES;
-//    [popupView.layer insertSublayer:radiusLayer above:subLayer];
-//    popupView.layer.cornerRadius = 8.0;
-//    popupView.layer.masksToBounds = YES;
-    //缓存视图渲染内容
-    popupView.layer.shouldRasterize = YES;
-    popupView.layer.rasterizationScale = [[UIScreen mainScreen] scale];
     
     // Add overlay
     if (self.lewOverlayView == nil) {
