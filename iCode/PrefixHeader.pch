@@ -1,6 +1,8 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import"ProgressHUD.h"
 #import "UIColor+iCode.h"
+#import <SobotKit/SobotKit.h>
+//#import <IJKMediaFramework/IJKMediaFramework.h>
 /**
  *  头像cell高度
  */
