@@ -8,6 +8,7 @@
 
 #import "CircleToolBarView.h"
 #import "CodeCircleViewModel.h"
+#import "CodeCircle.h"
 
 @interface CircleToolBarView ()
 
@@ -39,7 +40,14 @@
 }
 
 -(void)setCodeCircleFrame:(CodeCircleViewModel *)codeCircleFrame{
+    _codeCircleFrame = codeCircleFrame;
+    self.likeBtn.frame = codeCircleFrame.ToolLikeFrame;
+    self.likeBtn.imageView.image = [UIImage imageNamed:@"like"];
+    self.likeBtn.titleLabel.text = codeCircleFrame.codeCircle.like_count;
     
+    self.commentBtn.frame = codeCircleFrame.ToolCommentFrame;
+    self.commentBtn.imageView.image = [UIImage imageNamed:@"comment"];
+    self.commentBtn.titleLabel.text = codeCircleFrame.codeCircle.comment_count;
 }
 
 @end

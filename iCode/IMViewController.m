@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
        // Do any additional setup after loading the view.
-    UIButton * but = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 60, 60)];
+    UIButton * but = [[UIButton alloc]initWithFrame:CGRectMake(self.view.frame.size.width / 2, self.view.frame.size.height/2, 60, 60)];
     [but setTitle:@"点击" forState:UIControlStateNormal];
     [but addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
@@ -25,14 +25,14 @@
     }
 - (void)clickButton:(id)sender {
     //----------------客服---------------------
-    NSString*sysNumber=@"dd71b145f54e448a9faaddb6d7d37ae3";
+    NSString *sysNumber=@"dd71b145f54e448a9faaddb6d7d37ae3";
     
     //启动
     
     
     CFUUIDRef puuid = CFUUIDCreate( nil );
     CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
-    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    NSString *result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
     CFRelease(puuid);
     CFRelease(uuidString);
     
@@ -45,15 +45,15 @@
     
     //用户id，用于标识用户，建议填写
     
-    initInfo.userId=@"Your userId";
+    initInfo.userId= @"Your userId";
     
-    initInfo.phone=@"Your phone";
+    initInfo.phone= @"Your phone";
     
-    initInfo.nickName=@"Your nickName";
+    initInfo.nickName= @"Your nickName";
     
     initInfo.email=@"Your user email";
     
-    ZCKitInfo *uiInfo=[ZCKitInfo new];
+    ZCKitInfo *uiInfo= [ZCKitInfo new];
     
     uiInfo.info=initInfo;
     
@@ -65,7 +65,7 @@
                        
                        //点击返回
                        
-                       if(type==ZCPageBlockGoBack){
+                       if(type == ZCPageBlockGoBack){
                            
                            NSLog(@"点击了关闭按钮");
                            
@@ -73,7 +73,7 @@
                        
                        //页面UI初始化完成，可以获取UIView，自定义UI
                        
-                       if(type==ZCPageBlockLoadFinish){
+                       if(type == ZCPageBlockLoadFinish){
                            
                            //banner 返回按钮
                            
