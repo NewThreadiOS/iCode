@@ -21,6 +21,12 @@
 		7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7060B9821DC7309D0032CE2A /* SLTableViewCell.m */; };
 		708AB3A01DCB37930043775F /* ChangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708AB39F1DCB37930043775F /* ChangeView.xib */; };
 		708AB3A31DCB37A10043775F /* ChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 708AB3A21DCB37A10043775F /* ChangeView.m */; };
+		70E30F1A1DD986D200A1CC85 /* CodeCircleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E30F191DD986D200A1CC85 /* CodeCircleTableViewCell.m */; };
+		70E30F1D1DD986E400A1CC85 /* CircleBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E30F1C1DD986E400A1CC85 /* CircleBodyView.m */; };
+		70E30F201DD986F300A1CC85 /* CircleToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E30F1F1DD986F300A1CC85 /* CircleToolBarView.m */; };
+		70E30F221DD98C9500A1CC85 /* CodeCircle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70E30F211DD98C9500A1CC85 /* CodeCircle.plist */; };
+		70E30F281DD99AFA00A1CC85 /* CodeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E30F271DD99AFA00A1CC85 /* CodeCircle.m */; };
+		70E30F2C1DD99E4000A1CC85 /* CodeCircleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E30F2B1DD99E4000A1CC85 /* CodeCircleViewModel.m */; };
 		B3019F581DC48C390062CF35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F571DC48C390062CF35 /* main.m */; };
 		B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3019F5A1DC48C390062CF35 /* AppDelegate.m */; };
 		B3019F611DC48C390062CF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3019F5F1DC48C390062CF35 /* Main.storyboard */; };
@@ -95,6 +101,17 @@
 		708AB39F1DCB37930043775F /* ChangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangeView.xib; sourceTree = "<group>"; };
 		708AB3A11DCB37A10043775F /* ChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeView.h; sourceTree = "<group>"; };
 		708AB3A21DCB37A10043775F /* ChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeView.m; sourceTree = "<group>"; };
+		70E30F181DD986D200A1CC85 /* CodeCircleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeCircleTableViewCell.h; sourceTree = "<group>"; };
+		70E30F191DD986D200A1CC85 /* CodeCircleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeCircleTableViewCell.m; sourceTree = "<group>"; };
+		70E30F1B1DD986E400A1CC85 /* CircleBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleBodyView.h; sourceTree = "<group>"; };
+		70E30F1C1DD986E400A1CC85 /* CircleBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleBodyView.m; sourceTree = "<group>"; };
+		70E30F1E1DD986F300A1CC85 /* CircleToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleToolBarView.h; sourceTree = "<group>"; };
+		70E30F1F1DD986F300A1CC85 /* CircleToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleToolBarView.m; sourceTree = "<group>"; };
+		70E30F211DD98C9500A1CC85 /* CodeCircle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodeCircle.plist; sourceTree = "<group>"; };
+		70E30F261DD99AFA00A1CC85 /* CodeCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeCircle.h; sourceTree = "<group>"; };
+		70E30F271DD99AFA00A1CC85 /* CodeCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeCircle.m; sourceTree = "<group>"; };
+		70E30F2A1DD99E4000A1CC85 /* CodeCircleViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeCircleViewModel.h; sourceTree = "<group>"; };
+		70E30F2B1DD99E4000A1CC85 /* CodeCircleViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeCircleViewModel.m; sourceTree = "<group>"; };
 		A4615F70D2BBE6A2ADFD15FB /* Pods-iCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCode/Pods-iCode.debug.xcconfig"; sourceTree = "<group>"; };
 		B3019F531DC48C390062CF35 /* iCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3019F571DC48C390062CF35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -335,6 +352,7 @@
 		70163A1D1DC71DF70025DAD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70E30F171DD986B200A1CC85 /* CodeCircleCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -342,6 +360,9 @@
 		70163A1E1DC71DF90025DAD7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				70E30F291DD99E2700A1CC85 /* ViewModel */,
+				70E30F261DD99AFA00A1CC85 /* CodeCircle.h */,
+				70E30F271DD99AFA00A1CC85 /* CodeCircle.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -428,6 +449,28 @@
 			name = "登录";
 			sourceTree = "<group>";
 		};
+		70E30F171DD986B200A1CC85 /* CodeCircleCell */ = {
+			isa = PBXGroup;
+			children = (
+				70E30F181DD986D200A1CC85 /* CodeCircleTableViewCell.h */,
+				70E30F191DD986D200A1CC85 /* CodeCircleTableViewCell.m */,
+				70E30F1B1DD986E400A1CC85 /* CircleBodyView.h */,
+				70E30F1C1DD986E400A1CC85 /* CircleBodyView.m */,
+				70E30F1E1DD986F300A1CC85 /* CircleToolBarView.h */,
+				70E30F1F1DD986F300A1CC85 /* CircleToolBarView.m */,
+			);
+			name = CodeCircleCell;
+			sourceTree = "<group>";
+		};
+		70E30F291DD99E2700A1CC85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70E30F2A1DD99E4000A1CC85 /* CodeCircleViewModel.h */,
+				70E30F2B1DD99E4000A1CC85 /* CodeCircleViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		B3019F4A1DC48C390062CF35 = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +508,7 @@
 				B3019F571DC48C390062CF35 /* main.m */,
 				EFD7DF511DC4F6A0004022D8 /* dataArr.plist */,
 				B33909AE1DC5E1E800E6E3F5 /* PrefixHeader.pch */,
+				70E30F211DD98C9500A1CC85 /* CodeCircle.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -607,6 +651,7 @@
 				B304C0D51DC75E3C008CF977 /* loginReginster.storyboard in Resources */,
 				708AB3A01DCB37930043775F /* ChangeView.xib in Resources */,
 				B3019F661DC48C390062CF35 /* LaunchScreen.storyboard in Resources */,
+				70E30F221DD98C9500A1CC85 /* CodeCircle.plist in Resources */,
 				EF3D3CC31DCCCDCC009F17ED /* UserInfoTableViewCell.xib in Resources */,
 				B3019F631DC48C390062CF35 /* Assets.xcassets in Resources */,
 				B34426791DCDF82A00C72E6F /* SobotKit.bundle in Resources */,
@@ -672,15 +717,20 @@
 				7035F6981DCA1295000D7151 /* LewPopupViewAnimationDrop.m in Sources */,
 				70163A2A1DC723230025DAD7 /* UIColor+iCode.m in Sources */,
 				B3019F731DC48CD50062CF35 /* LJTaBar.m in Sources */,
+				70E30F1D1DD986E400A1CC85 /* CircleBodyView.m in Sources */,
 				B3019F801DC48FE40062CF35 /* CodeViewController.m in Sources */,
+				70E30F1A1DD986D200A1CC85 /* CodeCircleTableViewCell.m in Sources */,
 				B3019F7D1DC48F730062CF35 /* MeViewController.m in Sources */,
 				B3019F701DC48C8C0062CF35 /* UIImage+image.m in Sources */,
 				EFBCB0B31DC6015C0029648E /* UserInfoViewController.m in Sources */,
+				70E30F2C1DD99E4000A1CC85 /* CodeCircleViewModel.m in Sources */,
+				70E30F281DD99AFA00A1CC85 /* CodeCircle.m in Sources */,
 				7035F69A1DCA1295000D7151 /* LewPopupViewAnimationSlide.m in Sources */,
 				EFD7DF631DC4FADA004022D8 /* MeMenu.m in Sources */,
 				7035F69B1DCA1295000D7151 /* LewPopupViewAnimationSpring.m in Sources */,
 				B3019F5B1DC48C390062CF35 /* AppDelegate.m in Sources */,
 				7060B9831DC7309D0032CE2A /* SLTableViewCell.m in Sources */,
+				70E30F201DD986F300A1CC85 /* CircleToolBarView.m in Sources */,
 				B3019F831DC48FEF0062CF35 /* LiveViewController.m in Sources */,
 				B304C0D61DC75E3C008CF977 /* LogViewController.m in Sources */,
 				B3019F581DC48C390062CF35 /* main.m in Sources */,

@@ -29,9 +29,9 @@
     //获取所有的tabBatItem的外观（标识）  appearance只要一个类遵守UIAppearance，就能获取全局的外观，UIView   会改变所有的uiview 所以不严谨
     //UITabBarItem*item=[UITabBarItem appearance];
     
-    UITabBarItem*item = [UITabBarItem appearanceWhenContainedIn:self, nil];//获取当前这个类下面的所有tabBarItem
+    UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];//获取当前这个类下面的所有tabBarItem
     
-    NSMutableDictionary*att = [NSMutableDictionary dictionary];
+    NSMutableDictionary *att = [NSMutableDictionary dictionary];
     att[NSForegroundColorAttributeName] = [UIColor orangeColor];
     
     

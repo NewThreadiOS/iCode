@@ -12,3 +12,14 @@
  *  普通cell高度
  */
 #define nomalRowHeight 44
+
+#define circleCellMargin 15
+#define circleCelliconWH 40
+#define circleCellNameattributes @{NSFontAttributeName : [UIFont systemFontOfSize:16]}
+#define circleCellNameFont [UIFont systemFontOfSize:16]
+#define circleCellTimeattributes @{NSFontAttributeName : [UIFont systemFontOfSize:13]}
+#define circleCellTimeFont [UIFont systemFontOfSize:13]
+#define circleCellTextattributes @{NSFontAttributeName : [UIFont systemFontOfSize:17]}
+#define circleCellTextFont [UIFont systemFontOfSize:17]
+#define circleCellWidth [UIScreen mainScreen].bounds.size.width - circleCellMargin
+#define circleCellToolBarHeight 35
