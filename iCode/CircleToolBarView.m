@@ -28,10 +28,11 @@
 }
 
 - (void)setChildView{
+    self.backgroundColor = [UIColor colorWithHexString:@"#555555"];
     //点赞
     UIButton *likeBtn = [[UIButton alloc] init];
     [likeBtn setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
-    [likeBtn setBackgroundImage:[UIImage imageNamed:@"bg"] forState:UIControlStateNormal];
+//    [likeBtn setBackgroundImage:[UIImage imageNamed:@"bg"] forState:UIControlStateNormal];
     [likeBtn setTitleColor:circleCellToolBarTintColor forState:UIControlStateNormal];
     likeBtn.titleLabel.font = circleCellToolBarTittleFont;
     [self addSubview:likeBtn];

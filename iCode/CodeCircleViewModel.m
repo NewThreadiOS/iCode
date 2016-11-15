@@ -59,10 +59,16 @@
 
 //计算Code圈工具条Frame
 - (void)setCodeCircleToolBarFrames{
+    //工具条frame
+    CGFloat toolBarX = 0;
+    CGFloat toolBarY = CGRectGetMaxY(self.circleBodyFrame);
+    CGFloat toolBarW = circleCellWidth;
+    CGFloat toolBarH = circleCellToolBarHeight;
+    self.circleToolBarFrame = CGRectMake(toolBarX, toolBarY, toolBarW, toolBarH);
     //点赞
     CGFloat likeX = 0;
     CGFloat likeY = 0;
-    CGFloat likeW = circleCellWidth / 2;
+    CGFloat likeW = toolBarW / 2;
     CGFloat likeH = circleCellToolBarHeight;
     self.ToolLikeFrame = CGRectMake(likeX, likeY, likeW, likeH);
     //评论
@@ -71,12 +77,6 @@
     CGFloat commentW = likeW;
     CGFloat commentH = likeH;
     self.ToolCommentFrame = CGRectMake(commentX, commentY, commentW, commentH);
-    //工具条frame
-    CGFloat toolBarX = 0;
-    CGFloat toolBarY = CGRectGetMaxY(self.circleBodyFrame);
-    CGFloat toolBarW = circleCellWidth;
-    CGFloat toolBarH = circleCellToolBarHeight;
-    self.circleToolBarFrame = CGRectMake(toolBarX, toolBarY, toolBarW, toolBarH);
 }
 
 - (void)setCellHeight{

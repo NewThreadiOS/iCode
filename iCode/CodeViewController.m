@@ -30,6 +30,11 @@
 - (void)setUI{
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    self.title = @"Code圈";
+    //添加右边btn
+    UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 25, 25)];
+    [rightBtn setImage:[UIImage imageNamed:@"navigationbar_push"] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
 }
 
 - (void)setData{

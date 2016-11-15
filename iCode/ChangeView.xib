@@ -87,7 +87,7 @@
                 <outlet property="textField" destination="D2k-xR-EKB" id="4LG-c5-9AT"/>
                 <outlet property="tittleLabel" destination="TRY-tf-FZ7" id="7G1-B2-p6p"/>
             </connections>
-            <point key="canvasLocation" x="-26" y="36"/>
+            <point key="canvasLocation" x="-23" y="-163"/>
         </view>
     </objects>
 </document>
