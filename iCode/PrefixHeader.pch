@@ -3,6 +3,24 @@
 #import "UIColor+iCode.h"
 #import <SobotKit/SobotKit.h>
 //#import <IJKMediaFramework/IJKMediaFramework.h>
+
+/**
+ *  屏幕宽高
+ */
+#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define screenHeight [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  导航条
+ */
+#define iCodeNavigationBarColor [UIColor colorWithHexString:@"#47B879"]                  //tableview背景颜色
+
+/**
+ *  tableView
+ */
+#define iCodeTableviewBgColor [UIColor colorWithHexString:@"#E2EAF2"]                  //tableview背景颜色
+#define iCodeTableViewSectionMargin 25                                                 //section间距
+
 /**
  *  头像cell高度
  */
@@ -13,13 +31,18 @@
  */
 #define nomalRowHeight 44
 
-#define circleCellMargin 15
-#define circleCelliconWH 40
-#define circleCellNameattributes @{NSFontAttributeName : [UIFont systemFontOfSize:16]}
-#define circleCellNameFont [UIFont systemFontOfSize:16]
-#define circleCellTimeattributes @{NSFontAttributeName : [UIFont systemFontOfSize:13]}
-#define circleCellTimeFont [UIFont systemFontOfSize:13]
-#define circleCellTextattributes @{NSFontAttributeName : [UIFont systemFontOfSize:17]}
-#define circleCellTextFont [UIFont systemFontOfSize:17]
-#define circleCellWidth [UIScreen mainScreen].bounds.size.width - circleCellMargin
-#define circleCellToolBarHeight 35
+/**
+ *  Code圈
+ */
+#define circleCellMargin 15  //间距
+#define circleCelliconWH 40  //头像高度、宽度
+#define circleCellNameattributes @{NSFontAttributeName : [UIFont systemFontOfSize:16]}  //昵称att
+#define circleCellNameFont [UIFont systemFontOfSize:16]                                 //昵称字号
+#define circleCellTimeattributes @{NSFontAttributeName : [UIFont systemFontOfSize:13]}  //时间att
+#define circleCellTimeFont [UIFont systemFontOfSize:13]                                 //时间字号
+#define circleCellTextattributes @{NSFontAttributeName : [UIFont systemFontOfSize:17]}  //正文att
+#define circleCellTextFont [UIFont systemFontOfSize:17]                                 //正文字号
+#define circleCellWidth [UIScreen mainScreen].bounds.size.width                         //cell的宽度
+#define circleCellToolBarHeight 35                                                      //cell工具条高度
+#define circleCellToolBarTintColor [UIColor colorWithHexString:@"#464646"]              //工具条图标、字体颜色
+#define circleCellToolBarTittleFont [UIFont systemFontOfSize:14]                        //工具条btn字号

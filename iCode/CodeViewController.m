@@ -44,6 +44,7 @@
         _tableView.delegate = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = [UIColor grayColor];
+        _tableView.backgroundColor = iCodeTableviewBgColor;
     }
     return _tableView;
 }
@@ -92,5 +93,9 @@
     //取数据
     CodeCircleViewModel *codeCircleFrame = self.codeCircleFrames[indexPath.section];
     return codeCircleFrame.cellHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return circleCellMargin;
 }
 @end

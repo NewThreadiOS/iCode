@@ -6,19 +6,19 @@
 		<key>name</key>
 		<string>我的关注</string>
 		<key>icon</key>
-		<string>tabbar_home</string>
+		<string>myfollows</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>我的动态</string>
 		<key>icon</key>
-		<string>tabbar_home</string>
+		<string>mymoment</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>设置</string>
 		<key>icon</key>
-		<string>tabbar_home</string>
+		<string>settings</string>
 	</dict>
 </array>
 </plist>

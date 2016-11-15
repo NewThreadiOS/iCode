@@ -46,7 +46,7 @@
     //正文
     CGFloat textX = circleCellMargin;
     CGFloat textY = CGRectGetMaxY(self.bodyIconFrame) + circleCellMargin;
-    CGFloat textW = circleCellWidth - circleCellMargin * 2;
+    CGFloat textW = circleCellWidth - circleCellMargin * 4;
     CGSize textSize = [self.codeCircle.text boundingRectWithSize:CGSizeMake(textW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:circleCellTextattributes context:nil].size;
     self.bodyTextFrame = (CGRect){{textX,textY},textSize};
     //主体frame

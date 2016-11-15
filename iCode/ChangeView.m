@@ -58,7 +58,6 @@ NSInteger type;
     //缓存视图渲染内容
     self.layer.shouldRasterize = YES;
     self.layer.rasterizationScale = [[UIScreen mainScreen] scale];
-    
     return changeView;
 }
 

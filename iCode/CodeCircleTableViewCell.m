@@ -34,6 +34,8 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+//        UIImageView *im = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgg"]];
+//        self.backgroundView = im;
         //添加子控件
         [self setChildView];
     }
@@ -62,6 +64,12 @@
     self.bodyView.codeCircleFrame = codeCircleFrame;
     self.toolBarView.frame = codeCircleFrame.circleToolBarFrame;
     self.toolBarView.codeCircleFrame = codeCircleFrame;
+}
+
+-(void)setFrame:(CGRect)frame{
+    frame.origin.x += circleCellMargin;
+    frame.size.width -= circleCellMargin * 2;
+    [super setFrame:frame];
 }
 
 @end

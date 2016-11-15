@@ -41,7 +41,7 @@
         //禁止滑动
         _tableView.scrollEnabled = NO;
         //背景颜色
-        _tableView.backgroundColor = [UIColor colorWithHexString:@"#EBEBEB"];
+        _tableView.backgroundColor = iCodeTableviewBgColor;
         
         UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
         [_tableView setTableFooterView:v];
@@ -101,7 +101,13 @@
 
 //section头部间距
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 25;
+    return iCodeTableViewSectionMargin;
+}
+//section头部视图
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *headerView = [[UIView alloc] init];
+    headerView.backgroundColor = iCodeTableviewBgColor;
+    return headerView;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

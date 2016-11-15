@@ -21,10 +21,13 @@
     self.navigationBar.translucent = NO;
     
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    //隐藏顶部线条
+    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setShadowImage:[[UIImage alloc] init]];
     
     self.interactivePopGestureRecognizer.delegate = self;
     //导航条颜色
-    self.navigationBar.barTintColor = [UIColor colorWithHexString:@"#383A3D"];
+    self.navigationBar.barTintColor = iCodeNavigationBarColor;
     //tittle字体颜色
     NSMutableDictionary *titleTextAttribute = [NSMutableDictionary dictionary];
     titleTextAttribute[NSForegroundColorAttributeName] = [UIColor whiteColor];

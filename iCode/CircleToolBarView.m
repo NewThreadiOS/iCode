@@ -30,11 +30,18 @@
 - (void)setChildView{
     //点赞
     UIButton *likeBtn = [[UIButton alloc] init];
+    [likeBtn setImage:[UIImage imageNamed:@"like"] forState:UIControlStateNormal];
+    [likeBtn setBackgroundImage:[UIImage imageNamed:@"bg"] forState:UIControlStateNormal];
+    [likeBtn setTitleColor:circleCellToolBarTintColor forState:UIControlStateNormal];
+    likeBtn.titleLabel.font = circleCellToolBarTittleFont;
     [self addSubview:likeBtn];
     self.likeBtn = likeBtn;
     
     //评论
     UIButton *commentBtn = [[UIButton alloc] init];
+    [commentBtn setImage:[UIImage imageNamed:@"comment"] forState:UIControlStateNormal];
+    [commentBtn setTitleColor:circleCellToolBarTintColor forState:UIControlStateNormal];
+    commentBtn.titleLabel.font = circleCellToolBarTittleFont;
     [self addSubview:commentBtn];
     self.commentBtn = commentBtn;
 }
@@ -42,12 +49,10 @@
 -(void)setCodeCircleFrame:(CodeCircleViewModel *)codeCircleFrame{
     _codeCircleFrame = codeCircleFrame;
     self.likeBtn.frame = codeCircleFrame.ToolLikeFrame;
-    self.likeBtn.imageView.image = [UIImage imageNamed:@"like"];
-    self.likeBtn.titleLabel.text = codeCircleFrame.codeCircle.like_count;
+    [self.likeBtn setTitle:[NSString stringWithFormat:@" %@",codeCircleFrame.codeCircle.like_count] forState:UIControlStateNormal];
     
     self.commentBtn.frame = codeCircleFrame.ToolCommentFrame;
-    self.commentBtn.imageView.image = [UIImage imageNamed:@"comment"];
-    self.commentBtn.titleLabel.text = codeCircleFrame.codeCircle.comment_count;
+    [self.commentBtn setTitle:[NSString stringWithFormat:@" %@",codeCircleFrame.codeCircle.comment_count] forState:UIControlStateNormal];
 }
 
 @end
