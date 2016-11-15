@@ -52,7 +52,7 @@
     //修改tabBar的位置
     
     //自定义tabBar
-    LJTaBar*tabBar=[[LJTaBar alloc]initWithFrame:self.tabBar.frame];
+    LJTaBar *tabBar = [[LJTaBar alloc] initWithFrame:self.tabBar.frame];
     //由于tabBar是readonly所以用KVC赋值self.tabBar=tabBar;
     [self setValue:tabBar forKey:@"tabBar"];
     //objc_msgSend(self, @selector(setTabBar:),tabBar);
@@ -64,20 +64,20 @@
 -(void)setUpAllChildViewController{
      //Live
     SLViewController *live = [[SLViewController alloc]initWithRootViewController:[[LiveViewController alloc]init]];
-    [self setUPOneChildViewController:live image:[UIImage imageNamed:@"tabbar_home"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_home_selected"] title:@"直播"];
+    [self setUPOneChildViewController:live image:[UIImage imageNamed:@"tabbar_live_green"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_live_green"] title:@"直播"];
     
     
    //IM
     SLViewController *im = [[SLViewController alloc]initWithRootViewController:[[IMViewController alloc]init]];
-    [self setUPOneChildViewController:im image:[UIImage imageNamed:@"tabbar_message_center"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_message_center_selected"] title:@"消息"];
+    [self setUPOneChildViewController:im image:[UIImage imageNamed:@"tabbar_chat"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_chat"] title:@"聊天"];
     //Code
     SLViewController *code = [[SLViewController alloc]initWithRootViewController:[[CodeViewController alloc]init]];
-    [self setUPOneChildViewController:code image:[UIImage imageNamed:@"tabbar_discover"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_discover_selected"] title:@"Code圈"];
+    [self setUPOneChildViewController:code image:[UIImage imageNamed:@"tabbar_code"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_code"] title:@"Code圈"];
     
     
     //Me
     SLViewController *me = [[SLViewController alloc]initWithRootViewController:[[MeViewController alloc]init]];
-    [self setUPOneChildViewController:me image:[UIImage imageNamed:@"tabbar_profile"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_profile_selected"] title:@"我"];
+    [self setUPOneChildViewController:me image:[UIImage imageNamed:@"tabbar_me"] selectedImage:[UIImage imageWithOringinalNanme:@"tabbar_me"] title:@"我"];
     
 }
 -(void)setUPOneChildViewController:(UIViewController*)vc image:(UIImage*)image selectedImage :(UIImage*)selectedImage title:(NSString*)title
@@ -85,11 +85,10 @@
     
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = image;
-    //    NSMutableDictionary*att=[NSMutableDictionary dictionary];
-    //    att[NSForegroundColorAttributeName]=[UIColor orangeColor];
-    //
-    //
-    //    [vc.tabBarItem setTitleTextAttributes:att forState:UIControlStateSelected];
+        NSMutableDictionary *att = [NSMutableDictionary dictionary];
+        att[NSForegroundColorAttributeName] = iCodeNavigationBarColor;
+    
+        [vc.tabBarItem setTitleTextAttributes:att forState:UIControlStateSelected];
 //    vc.tabBarItem.badgeValue=@"1";
     UIImage *setImage = selectedImage;
     vc.tabBarItem.selectedImage = setImage;
