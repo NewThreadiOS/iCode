@@ -9,6 +9,7 @@
 #import "CodeViewController.h"
 #import "CodeCircleTableViewCell.h"
 #import "CodeCircleViewModel.h"
+#import "MJRefresh.h"
 
 @interface CodeViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -43,13 +44,20 @@
 
 -(UITableView *)tableView{
     if (_tableView == nil) {
-        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        CGFloat tableViewH =  self.view.bounds.size.height - 49;
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, tableViewH) style:UITableViewStylePlain];
         _tableView = tableView;
+        //防止tableView被tabBar遮挡
+        _tableView.contentInset = UIEdgeInsetsMake(0.0f, 0.0f, CGRectGetHeight(self.tabBarController.tabBar.frame), 0.0f);
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.backgroundColor = [UIColor grayColor];
         _tableView.backgroundColor = iCodeTableviewBgColor;
+        
+        //下拉刷新
+        _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+        [_tableView.mj_header beginRefreshing];
     }
     return _tableView;
 }
@@ -72,15 +80,32 @@
             codeCircleFrame.codeCircle = codeCircle;
             [_codeCircleFrames addObject:codeCircleFrame];
         }
-        NSLog(@"%@",_codeCircleFrames);
     }
     return _codeCircleFrames;
+}
+
+#pragma mark - 加载最新数据
+
+- (void)loadNewData{
+    //模拟增加数据
+    for (CodeCircle *codeCircle in self.codeCircles) {
+        CodeCircleViewModel *codeCircleFrame = [[CodeCircleViewModel alloc] init];
+        codeCircleFrame.codeCircle = codeCircle;
+        [_codeCircleFrames addObject:codeCircleFrame];
+    }
+//    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0/*延迟执行时间*/ * NSEC_PER_SEC));
+//    
+//    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+//        [self.tableView reloadData];
+//    });
+    [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+
 }
 
 #pragma mark - tableView的方法
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    NSLog(@"%@",self.codeCircleFrames);
     return self.codeCircles.count;
 }
 
@@ -103,4 +128,15 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return circleCellMargin;
 }
+
+//section底部视图
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *footerView = [[UIView alloc] init];
+    footerView.backgroundColor = iCodeTableviewBgColor;
+    return footerView;
+}
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+//    return iCodeTableViewSectionMargin;
+//}
 @end

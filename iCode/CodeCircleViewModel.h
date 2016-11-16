@@ -29,6 +29,8 @@
 @property (nonatomic ,assign) CGRect bodyTimeFrame;
     //正文Frame
 @property (nonatomic ,assign) CGRect bodyTextFrame;
+    //图片Frame
+@property (nonatomic ,assign) CGRect bodyPhotoFrame;
 
 /**
  *  Code圈工具条Frame

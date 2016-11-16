@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString *time;
 @property (nonatomic, copy) NSString *comment_count;
 @property (nonatomic, copy) NSString *like_count;
+@property (nonatomic, strong) NSArray *photos;
 
 - (instancetype)initWithDic:(NSDictionary *)dic;
 + (instancetype)initWithDic:(NSDictionary *)dic;

@@ -46,15 +46,30 @@
     //正文
     CGFloat textX = circleCellMargin;
     CGFloat textY = CGRectGetMaxY(self.bodyIconFrame) + circleCellMargin;
-    CGFloat textW = circleCellWidth - circleCellMargin * 4;
+    CGFloat textW = circleCellWidth - circleCellMargin * 2;
     CGSize textSize = [self.codeCircle.text boundingRectWithSize:CGSizeMake(textW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:circleCellTextattributes context:nil].size;
     self.bodyTextFrame = (CGRect){{textX,textY},textSize};
-    //主体frame
-    CGFloat bodyX = 0;
-    CGFloat bodyY = 0;
-    CGFloat bodyW = circleCellWidth;
-    CGFloat bodyH = CGRectGetMaxY(self.bodyTextFrame) + circleCellMargin;
-    self.circleBodyFrame = CGRectMake(bodyX, bodyY, bodyW, bodyH);
+    
+    //图片 (判断是否有图片)
+    if ([[self.codeCircle.photos objectAtIndex:0] count] != 0) {
+        CGFloat photosX = circleCellMargin;
+        CGFloat photosY = CGRectGetMaxY(self.bodyTextFrame) + circleCellMargin;
+        CGFloat photosW = textW;
+        if ([[self.codeCircle.photos objectAtIndex:0] count] > 3) {
+            CGFloat photosH = circleCellPhotosWH * 2 + circleCellPhotosMargin;
+            self.bodyPhotoFrame = CGRectMake(photosX, photosY, photosW, photosH);
+        }else{
+            CGFloat photosH = circleCellPhotosWH;
+            self.bodyPhotoFrame = CGRectMake(photosX, photosY, photosW, photosH);
+        }
+        //主体frame
+        CGFloat bodyH = CGRectGetMaxY(self.bodyPhotoFrame) + circleCellMargin;
+        self.circleBodyFrame = CGRectMake(0, 0, circleCellWidth, bodyH);
+    }else{
+        //主体frame
+        CGFloat bodyH = CGRectGetMaxY(self.bodyTextFrame) + circleCellMargin;
+        self.circleBodyFrame = CGRectMake(0, 0, circleCellWidth, bodyH);
+    }
 }
 
 //计算Code圈工具条Frame

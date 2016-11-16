@@ -36,7 +36,15 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 //        UIImageView *im = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgg"]];
 //        self.backgroundView = im;
-        //添加子控件
+        // 阴影、圆角
+        self.layer.backgroundColor = [UIColor grayColor].CGColor;
+        self.layer.shadowOffset = CGSizeMake(0.5, 10);
+        self.layer.shadowRadius = 7.0;
+        self.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.layer.shadowOpacity = 0.3;
+        self.layer.cornerRadius = 7.0;
+        self.layer.masksToBounds = NO;
+        // 添加子控件
         [self setChildView];
     }
     return self;
@@ -52,8 +60,7 @@
     //工具条
     CircleToolBarView *toolBar = [[CircleToolBarView alloc] init];
     [self addSubview:toolBar];
-    self.toolBarView = toolBar;
-    
+    self.toolBarView = toolBar;    
 }
 
 -(void)setCodeCircleFrame:(CodeCircleViewModel *)codeCircleFrame{

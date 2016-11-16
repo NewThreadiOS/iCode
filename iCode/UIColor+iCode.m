@@ -3,7 +3,7 @@
 //  iCode
 //
 //  Created by SoolyChristina on 2016/10/31.
-//  Copyright © 2016年 Mr.Nut. All rights reserved.
+//  Copyright © 2016年 SoolyChristina. All rights reserved.
 //
 
 #import "UIColor+iCode.h"
