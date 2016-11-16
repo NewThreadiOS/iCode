@@ -23,6 +23,8 @@
     if (self = [super initWithFrame:frame]) {
         //添加子控件
         [self setChildView];
+        self.layer.cornerRadius = 7.0;
+        self.layer.masksToBounds = NO;
     }
     return self;
 }

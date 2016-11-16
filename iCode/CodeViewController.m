@@ -132,11 +132,8 @@
 //section底部视图
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     UIView *footerView = [[UIView alloc] init];
-    footerView.backgroundColor = iCodeTableviewBgColor;
+    footerView.backgroundColor = [UIColor clearColor];
     return footerView;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-//    return iCodeTableViewSectionMargin;
-//}
 @end

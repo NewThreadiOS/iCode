@@ -36,14 +36,16 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 //        UIImageView *im = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"bgg"]];
 //        self.backgroundView = im;
-        // 阴影、圆角
-        self.layer.backgroundColor = [UIColor grayColor].CGColor;
-        self.layer.shadowOffset = CGSizeMake(0.5, 10);
-        self.layer.shadowRadius = 7.0;
-        self.layer.shadowColor = [UIColor blackColor].CGColor;
-        self.layer.shadowOpacity = 0.3;
+        
+        // 阴影
+        self.layer.shadowOffset = CGSizeMake(0, 1);  //阴影偏移量
+        self.layer.shadowRadius = 2.5;
+        self.layer.shadowColor = [UIColor grayColor].CGColor;
+        self.layer.shadowOpacity = 1; //阴影透明度
+        // 圆角
         self.layer.cornerRadius = 7.0;
         self.layer.masksToBounds = NO;
+        
         // 添加子控件
         [self setChildView];
     }
