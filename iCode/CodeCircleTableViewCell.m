@@ -39,7 +39,7 @@
         
         // 阴影
         self.layer.shadowOffset = CGSizeMake(0, 1);  //阴影偏移量
-        self.layer.shadowRadius = 2.5;
+        self.layer.shadowRadius = 1.5;
         self.layer.shadowColor = [UIColor grayColor].CGColor;
         self.layer.shadowOpacity = 1; //阴影透明度
         // 圆角

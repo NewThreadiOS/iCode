@@ -111,6 +111,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     //当点击指定行的cell时创建 更改数据的view
     if (indexPath.section == 0 && indexPath.row == 1) {
         ChangeView *changeView = [[ChangeView alloc ]changeViewWithTittleName:@"更改昵称"
